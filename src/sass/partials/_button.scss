@@ -1,0 +1,90 @@
+// Przykład użycia guzika żeby działał ;)
+//     <div class="store">
+//      <button type="button" class="button store__button">testowy guzik</button>
+//     </div>
+// Używamy domieszek z działu "metodologia BEM"
+
+@media screen and (min-width: 768px) {
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e86f54;
+    border: none;
+    border-radius: 38px;
+
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 24px;
+
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: #e25b41;
+    }
+
+    &:focus {
+      background-color: #fa6f54;
+    }
+  }
+
+  .store {
+    &__button {
+      height: 64px;
+      width: 280px;
+    }
+  }
+
+  .blog {
+    &__button {
+      height: 64px;
+      width: 280px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      background-color: #e86f54;
+      border: none;
+      border-radius: 38px;
+  
+      color: white;
+      font-weight: 500;
+      line-height: 24px;
+  
+      transition: background-color 0.5s ease;
+  
+      &:hover {
+        background-color: #e25b41;
+      }
+  
+      &:focus {
+        background-color: #fa6f54;
+      }
+    }
+  
+    .store {
+      &__button {
+        height: 44px;
+        width: 208px;
+
+        font-size: 20px;
+      }
+    }
+  
+    .blog {
+      &__button {
+        height: 40px;
+        width: 170px;
+
+        font-size: 18px;
+      }
+    }
+  }
