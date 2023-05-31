@@ -1,6 +1,7 @@
 .banner {
   display: flex;
   justify-content: center;
+  padding-top: 44px;
   &__text {
     padding-left: 11px;
     padding-right: 14px;
@@ -9,8 +10,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 14px;
+    line-height: 17px;
   }
   &__flover {
     width: 145px;
@@ -23,11 +24,11 @@
     align-items: center;
   }
   &__button {
-    width: 64px;
-    border-radius: 50%;
+    height: 64px;
+    width: 76px;
+    border: none;
     background: #fff;
     display: flex;
-    height: 76px;
   }
   &__icon {
     height: 64px;
@@ -59,6 +60,7 @@
 
 @media screen and (min-width: 768px) {
   .banner {
+    padding-top: 38px;
     &__text {
       padding-left: 49px;
       padding-right: 40px;
@@ -89,6 +91,7 @@
 
 @media screen and (min-width: 1200px) {
   .banner {
+    padding-top: 64px;
     &__text {
       padding-left: 210px;
       padding-right: 0px;
