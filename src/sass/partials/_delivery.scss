@@ -1,0 +1,18 @@
+.delivery {
+  &__list {
+    &-item {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+
+    &__photo {
+      min-width: 320px;
+      width: 100%;
+    }
+  }
+}
+
+ol {
+  list-style-type: disc;
+}
