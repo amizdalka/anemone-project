@@ -1,21 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT-ANEMONE</title>
+    <link href="css/style.css" rel="stylesheet" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <include src="./partials/example.html"></include>
-
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="./index.js" type="module"></script>
-  </body>
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+</head>
+<body>
+  <main>
+    <div class="page">
+      <!-- header section -->
+      <header class="header">
+          <div class="container header__wrapper">
+            <!-- navi button hamburger-->
+            <button class="header__hamburger" type="button">
+              <span class="hamburger-box"></span>
+              <span class="hamburger-inner">
+              </span>
+             </button>
+              <!-- logo svg link -->
+            <a class="header__logo" href="index.html"><svg  class="header__logo--svg" width="" height="" >
+              <use class="header__logo--icon" href="#" x="" y=""></use>
+            </svg></a>
+              <!-- menu nav use id to anchor menu-->
+            <nav class="header__nav">
+              <ul class="header__nav--list">
+                <li class="header__nav--list-item"><a href="#anemone">Anemone</a></li>
+                <li class="header__nav--list-item"><a href="#about-us">About us</a></li>
+                <li class="header__nav--list-item"><a href="#store">Store</a></li>
+                <li class="header__nav--list-item"><a href="#delivery">Delivery</a></li>
+                <li class="header__nav--list-item"><a href="#blog">Blog</a></li>
+              </ul>
+            </nav>
+              <!-- contact button -->
+              <button data-modal-open type="button"     class="header__tel--btn"><svg   class="header__tel--svg"><use     class="header__tel--icon"></use></svg>
+              </button>
+          </div>
+      </header>
+      <!-- hero section -->
+      <section class="hero section">
+       <div class="container hero__container">
+        <h1 class="hero__title">ANEMONE</h1>
+        <h2 class="hero__subtitle"> flower studio</h2>
+        <!-- hero picture -->
+        <div class="hero__img">
+          <picture>
+            <img src="#" alt="flower" y="#" x="#">
+          </picture>
+        </div>
+        <!-- hero contact button -->
+        <button data-modal-open type="button" class="hero__contact--btn"><svg class="hero__contact--svg"><use class="hero__contact--icon"></use></svg></button>
+       </div> 
+      </section>
+      <!-- about section -->
+      <section class="about section" id="about-us">
+        <div class="container">
+          <h2 class="section__title">ABOUT</h2>
+          <div class="about__wrapper">
+            <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero veritatis eveniet necessitatibus inventore consequatur debitis beatae qui animi perspiciatis illum ipsa sint expedita dolor praesentium nihil, eius impedit deserunt quia?</p>
+            <picture>
+             <img src="#" alt="flowers" y="#" x="#">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- Store section -->
+      <section class="store section" id="store">
+        <div class="container">
+          <h2 class="section__title">STORE</h2>
+          <div class="store__gallery">
+            <ul class="store__list">
+              <li class="store__list--item">
+                <img src="" alt="">
+                <div class="item__description">
+                  <h3 class="item__title">compliments</h3>
+                  <p class="item__price">from $15</p>
+                </div>
+              </li>
+              <li class="store__list--item">
+                <img src="" alt="">
+                <div class="item__description">
+                  <h3 class="item__title">bouquets size S</h3>
+                  <p class="item__price">from $25</p>
+                </div>
+              </li>
+              <li class="store__list--item">
+                <img src="" alt="">
+                <div class="item__description">
+                  <h3 class="item__title">bouquets size M</h3>
+                  <p class="item__price">from $45</p>
+                </div>
+              </li>
+              <li class="store__list--item">
+                <img src="" alt="">
+                <div class="item__description">
+                  <h3 class="item__title">bouquets size L</h3>
+                  <p class="item__price">from $60</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button data-modal-open type="button" class="store__order--btn btn">Order flowers</button>
+        </div>
+      </section>
+      <!-- Delivery section -->
+      <section class="delivery section" id="delivery">
+        <div class="container">
+          <h2 class="section__title">DELIVERY</h2>
+          <div class="delivery__info">
+            <ol>
+              <li>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam optio quam</p>
+              </li>
+              <li>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam optio quam</p>
+              </li>
+              <li>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam optio quam</p>
+              </li>
+              <li>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam optio quam</p>
+              </li>
+            </ol>
+          </div>
+          <picture>
+            <img src="#" alt="flowers" y="#" x="#">
+          </picture>
+        </div>
+      </section>
+      <!-- Blog section -->
+      <section class="blog section" id="blog">
+        <div class="container">
+          <h2 class="section__title">BLOG</h2>
+          <div class="blog__gallery">
+            <div class="swiper"></div>
+            <div class="swiper__wrapper"></div>
+            <div class="swiper__slide">
+              <picture><img src="" alt=""></picture>
+            </div>
+            <div class="swiper__slide">
+              <picture><img src="" alt=""></picture>
+            </div>
+            <div class="swiper__slide">
+              <picture><img src="" alt=""></picture>
+            </div>
+            <div class="swiper__slide">
+              <picture><img src="" alt=""></picture>
+            </div>
+            <div class="swiper__slide">
+              <picture><img src="" alt=""></picture>
+            </div>
+            <div class="swiper__slide">
+              <picture><img src="" alt=""></picture>
+            </div>
+            <div class="swiper__button--prev">
+              <svg class="arrow">
+                <use></use>
+              </svg>
+            </div>
+            <div class="swiper__button--next">
+              <svg class="arrow">
+                <use></use>
+              </svg>
+            </div>  
+          </div>
+          <button data-modal-open type="button" class="blog__subscribe--btn btn">Subscribe</button>
+        </div>
+      </section>
+      <!-- footer section -->
+      <footer class="footer">
+        <div class="container container__footer">
+          <div class="footer__logo"><a class="footer__logo" href="index.html"><svg  class="footer__logo--svg" width="" height="" >
+            <use class="footer__logo--icon" href="#" x="" y=""></use>
+          </svg></a></div>
+          <div class="footer__nav">
+            <h4 class="footer__nav--title">Navigation</h4>
+            <ul class="footer__nav--list">
+              <li class="footer__nav--list-item"><a href="index.html">Anemone</a></li>
+              <li class="footer__nav--list-item"><a href="#about-us">About us</a></li>
+              <li class="footer__nav--list-item"><a href="#store">Store</a></li>
+              <li class="footer__nav--list-item"><a href="#delivery">Delivery</a></li>
+            </ul>
+            <div class="footer__worktime">
+              <h4 class="footer__worktime--title">Opening times</h4>
+              <p class="footer__worktime-description">Every day</p>
+              <p class="footer__worktime-description">09:00 - 22:00</p>
+            </div>
+            <div class="footer__address">
+              <h4 class="footer__address--title">Contacts</h4>
+              <address class="footer-section__address">
+                <p><a class="footer__address--link" href="tel:+380631234567">+38 063 123 45 67</a></p>
+                <p><a class="footer__address--link" href="mailto:info@devstudio.com">anemonestudio@example.com<a></p>
+                <p class="footer__address--description">Reitarska Street, 11 Kyiv, Ukraine</p>
+              </address>
+              <div class="footer__socials">
+                  <ul class="footer__socials--list">
+                      <li class="footer__socials--list-item">
+                        <a class="footer__socials__links" href="#" target="_blank">
+                          <svg class="footer__socials__svg" width="#" height="#">
+                          <use class="footer__socials__icon" href="#" x="#" y="#"></use></svg></a>
+                      </li>
+                      <li class="footer__socials--list-item">
+                        <a class="footer__socials__links" href="#" target="_blank">
+                          <svg class="footer__socials__svg" width="#" height="#">
+                          <use class="footer__socials__icon" href="#" x="#" y="#"></use></svg></a>
+                    </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>    
+</body>
 </html>
+
