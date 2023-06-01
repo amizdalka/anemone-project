@@ -4,5 +4,18 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+
+@import 'utils/mixins';
+// @import 'utils/vars.scss';
+
 @import './example';
-@import './partials/footer';
+
+// partials
+
+// @import 'partials/button.scss';
+// @import 'partials/banner.scss';
+// @import 'partials/contact-form.scss';
+// @import 'partials/header';
+// @import 'partials/delivery.scss';
+// @import 'partials/footer.scss';
+// @import 'partials/typography.scss';
