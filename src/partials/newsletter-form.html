@@ -1,0 +1,48 @@
+
+<!--"<button type="button" class="x" data-modal-open>" need to be used in blog section -->
+
+<!--MODAL CONTACT-US FORMULAR (Placed under the </footer>)-->
+
+
+
+
+<section>    
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal newsletter">
+
+          <button type="button" class="modal__btn" data-modal-close>
+            <svg class="modal__close" width="16" height="16">
+              <use href="/src/images/icons.svg#btn-close-icon"></use>
+            </svg>
+          </button>
+          <picture>
+            <img class="modal__img" src="./images/popup-bouquet-mobile.jpg"
+            src="./images/popup-bouquet-mobile@2x.jpg">
+          </picture>
+        <div class="right-side">
+          <h1 class="modal__header">Follow to our newsletter</h1>
+          <p clas="modal__description">
+            Be the first  to get exclusive offers and the latest  news on our product directly in your box.
+          </p>
+  
+          <form class="modal__form">
+  
+            <label class="modal__label" for="mail">Email</label>
+            <div class="modal__container">
+              <input
+                type="text"
+                name="mail"
+                id="mail"
+                class="modal__input"
+                placeholder="Your email"
+              />
+            </div>
+        </div>
+  
+            <button type="submit" class="modal__submit-button">Subscribe</button>
+
+          </form>
+        </div>
+      </div>
+    </section>

@@ -51,6 +51,15 @@
     transform: translate(-50%, -50%) scale(0) rotate(-180deg);
   }
 
+  .modal {
+    @include tablet {
+      padding: 48px 32px;
+      max-width: 480px;
+      min-height: 511px;
+    }
+
+  }
+
 
   .modal {
     position: absolute;
@@ -62,13 +71,6 @@
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: #ffffff;
-
-    @include tablet {
-      padding: 48px 32px;
-      max-width: 480px;
-      min-height: 511px;
-    }
-
 
     &__btn {
       position: absolute;
@@ -98,7 +100,7 @@
 
 
     &__header {
-      @include font(600, 20px, 1.2);
+      // @include font(600, 20px, 1.2);
       color: #000000;
       text-align: start;
 
