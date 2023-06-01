@@ -10,11 +10,11 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #e86f54;
+    background-color: $btnColor;
     border: none;
     border-radius: 38px;
 
-    color: white;
+    color: $secondaryFontColor;
     font-size: 28px;
     font-weight: 500;
     line-height: 24px;
@@ -22,11 +22,11 @@
     transition: background-color 0.5s ease;
 
     &:hover {
-      background-color: #e25b41;
+      background-color: $btnHoverColor;
     }
 
     &:focus {
-      background-color: #fa6f54;
+      background-color: $btnFocusColor;
     }
   }
 
@@ -43,6 +43,34 @@
       width: 280px;
     }
   }
+
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $btnColor;
+    border: none;
+    border-radius: 8px;
+
+    height: 50px;
+    width: 416px;
+
+    color: $secondaryFontColor;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: $btnHoverColor;
+    }
+
+    &:focus {
+      background-color: $btnFocusColor;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -51,7 +79,7 @@
       justify-content: center;
       align-items: center;
   
-      background-color: #e86f54;
+      background-color: $btnColor;
       border: none;
       border-radius: 38px;
   
@@ -62,11 +90,11 @@
       transition: background-color 0.5s ease;
   
       &:hover {
-        background-color: #e25b41;
+        background-color: $btnHoverColor;
       }
   
       &:focus {
-        background-color: #fa6f54;
+        background-color: $btnFocusColor;
       }
     }
   
@@ -85,6 +113,34 @@
         width: 170px;
 
         font-size: 18px;
+      }
+    }
+
+    .submit-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      background-color: $btnColor;
+      border: none;
+      border-radius: 8px;
+  
+      height: 37px;
+      width: 240px;
+  
+      color: $secondaryFontColor;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+  
+      transition: background-color 0.5s ease;
+  
+      &:hover {
+        background-color: $btnHoverColor;
+      }
+  
+      &:focus {
+        background-color: $btnFocusColor;
       }
     }
   }
