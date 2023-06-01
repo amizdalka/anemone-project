@@ -105,17 +105,17 @@
       text-align: start;
 
       @include tablet {
-        @include font(600, 32px, 1.21);
+        // @include font(600, 32px, 1.21);
       }
     }
 
 
     &__description {
-      @include font(500, 15px, 1.25);
+      // @include font(500, 15px, 1.25);
        color: #5c5c5c;
 
       @include tablet {
-        @include font(500, 16px, 1.25);
+        // @include font(500, 16px, 1.25);
       }
     }
 
@@ -126,12 +126,12 @@
 
 
     &__label {
-      @include font(500, 10px, 1.2);
+      // @include font(500, 10px, 1.2);
       color: #5c5c5c;
       margin-top: 18px;
 
       @include tablet {
-        @include font(500, 14px, 1.2);
+        // @include font(500, 14px, 1.2);
         margin: top 32px;
       }
     }
@@ -167,14 +167,14 @@
 
 
       &::placeholder {
-        @include font(500, 14px, 1.21);
+        // @include font(500, 14px, 1.21);
         color: rgba(0, 0, 0, 0.3);
       }
     }
 
     
     &__submit {
-      @include font(600, 14px, 1.2);
+      // @include font(600, 14px, 1.2);
       position: relative;
       display: block;
       width: 240px;
