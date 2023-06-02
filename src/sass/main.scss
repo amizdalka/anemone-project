@@ -6,7 +6,12 @@
 // Style dla pliku z przykładem HTML fragmentu
 
 @import './utils/mixins';
+
 @import './utils/vars';
+
+@import './base/common';
+
+@import './partials/delivery';
 @import './partials/footer';
 @import './partials/button';
 @import './partials/blog';
