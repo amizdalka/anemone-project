@@ -27,6 +27,7 @@
       padding-bottom: 100px;
     }
   }
+
   &__item {
     width: 136px;
     height: 181px;
@@ -64,6 +65,37 @@
     }
     @include desktop {
       padding-top: 24px;
+
+  .button {
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+
+    @include tablet {
+      font-size: 24px;
+
+      width: 240px;
+      height: 64px;
+    }
+
+    @include desktop {
+      font-size: 24px;
+
+      width: 240px;
+      height: 64px;
+    }
+  }
+  .swiper__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &--prev {
+      width: 50px;
+      height: 50px;
+      @include tablet {
+        width: 61px;
+        height: 61px;
+      }
     }
   }
 }

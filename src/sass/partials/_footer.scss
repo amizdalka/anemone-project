@@ -1,8 +1,10 @@
+footer {
+  background-color: $footerBgColor;
+  background-size: cover;
+}
+
 .footer {
   box-sizing: border-box;
-  background-color: $footerBgColor;
-  max-width: 480px;
-  width: 100%;
   height: 389px;
   row-gap: 32px;
   column-gap: 32px;
@@ -14,18 +16,25 @@
   font-size: 14px;
   line-height: 16.94px;
   font-weight: 500;
+  font-family: 'Inter';
+
+  & address {
+    font-style: normal;
+  }
 
   &__container {
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
-    max-width: 128px;
+    max-width: 130px;
     width: 100%;
   }
 
   & a {
     text-decoration: none;
     color: $secondaryFontColor;
+
+    transition: color 0.5s ease;
   }
 
   & a:hover {
@@ -34,6 +43,7 @@
 
   &__container--icons {
     flex-direction: row;
+    column-gap: 14px;
     align-items: flex-start;
     max-height: 28px;
   }
@@ -44,7 +54,6 @@
   }
 
   & h3 {
-    font-weight: 700;
     line-height: 21.78px;
     margin-top: 0;
     margin-bottom: 18px;
@@ -78,6 +87,14 @@
     height: 109px;
   }
 }
+@media (max-width: 767px) {
+  .footer {
+    &__mail {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
 @media (min-width: 768px) {
   .footer {
     height: 268px;
@@ -85,6 +102,8 @@
     font-size: 16px;
     line-height: 19.36px;
     padding: 60px 40px 54px 24px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 
     & h3 {
       line-height: 24.2px;
@@ -92,7 +111,8 @@
     }
     &__container {
       word-wrap: initial;
-      max-width: 143px;
+      max-width: 147px;
+      width: 100%;
     }
 
     &__container--icons {
@@ -133,6 +153,8 @@
       stroke: $footerIconColor;
       width: 73px;
       height: 57px;
+
+      transition: color 0.5s ease;
     }
     &__logo svg:hover {
       fill: $btnHoverColor;
