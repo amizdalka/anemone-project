@@ -56,7 +56,9 @@
 .modal__img{
     width: 100%;
     height: auto;
-}
+    display: block;
+    }
+
 
 .modal__input{
     border:1px solid #D7D7D7;
@@ -64,4 +66,16 @@
     cursor: auto;
     display: flex;
     align-content: center;
+}
+
+.modal.newsletter{
+  padding: 0;
+  object-fit: contain;
+
+}
+.side__part{
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
