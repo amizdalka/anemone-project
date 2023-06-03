@@ -6,20 +6,20 @@
 //      @content;
 //      }}
 
-//   2) 
-//      @mixin font($weight: false, $size: false, $line: false, $letter: false) {
+  // 2) 
+  //    @mixin font($weight: false, $size: false, $line: false, $letter: false) {
 
-//      @if $weight {
-//      font-weight: $weight;
-//      }
+  //    @if $weight {
+  //    font-weight: $weight;
+  //    }
 
-//      @if $size {
-//        font-size: $size;
-//      }
+  //    @if $size {
+  //      font-size: $size;
+  //    }
 
-//      @if $line {
-//        line-height: $line;
-//      }}
+  //    @if $line {
+  //      line-height: $line;
+  //    }}
 
 .backdrop {
     position: fixed;
