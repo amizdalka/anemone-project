@@ -7,6 +7,12 @@
   &__gallery {
     display: flex;
     gap: 16px;
+    @include tablet {
+      gap: 32px;
+    }
+    @include desktop {
+      gap: 31px;
+    }
   }
   &__subscribe {
     display: flex;
@@ -14,17 +20,28 @@
     align-items: center;
     gap: 24px;
     padding-bottom: 60px;
+    @include tablet {
+      gap: 32px;
+      padding-bottom: 100px;
+    }
   }
   &__item {
     width: 136px;
     height: 181px;
+    @include tablet {
+      width: 344px;
+      height: 398px;
+    }
+    @include desktop {
+      width: 390px;
+      height: 421px;
+    }
   }
   &__item-off {
     display: none;
-  }
-  &__button {
-    height: 40px;
-    width: 170px;
+    @include desktop {
+      display: block;
+    }
   }
   &__swiper-button {
     height: 50px;
@@ -38,46 +55,45 @@
     font-size: 18px;
     line-height: 22px;
     padding-top: 14px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .blog {
-    &__gallery {
-      gap: 32px;
-    }
-    &__subscribe {
-      gap: 32px;
-      padding-bottom: 100px;
-    }
-    &__subscribe-title {
+    @include tablet {
       padding-top: 18px;
       font-size: 32px;
       line-height: 39px;
     }
-    &__button {
-      width: 280px;
-      height: 64px;
-    }
-    &__item {
-      width: 344px;
-      height: 398px;
-    }
-  }
-}
-@media screen and (min-width: 1200px) {
-  .blog {
-    &__gallery {
-      gap: 31px;
-    }
-    &__subscribe-title {
+    @include desktop {
       padding-top: 24px;
     }
-    &__item {
-      width: 390px;
-      height: 421px;
-    }
-    &__item-off {
-      display: block;
-    }
   }
 }
+// @media screen and (min-width: 768px) {
+//   .blog {
+//     &__gallery {
+
+//     }
+//     &__subscribe {
+
+//     }
+//     &__subscribe-title {
+
+//     }
+//     &__item {
+
+//     }
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .blog {
+//     &__gallery {
+
+//     }
+//     &__subscribe-title {
+
+//     }
+//     &__item {
+
+//     }
+//     &__item-off {
+
+//     }
+//   }
+// }

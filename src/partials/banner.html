@@ -19,8 +19,52 @@
     <h1 class="banner__title">ANEMONE</h1>
   </div>
   <div class="banner__button-conteiner">
-    <button data-modal-open type="button" class="banner__button">
-      <svg class="banner__icon"><use href="images/icons.svg#icon-button_main"></use></svg>
+    <button type="button" class="banner__button" data-modal-open>
+      <svg class="banner__icon" data-modal-open>
+        <use href="images/icons.svg#icon-button_main" data-modal-open></use>
+      </svg>
     </button>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__btn" data-modal-close>
+        <svg class="modal__close" width="16" height="16">
+          <use href="/src/images/icons.svg#btn-close-icon"></use>
+        </svg>
+      </button>
+
+      <h1 class="modal__header">Contact us</h1>
+      <p clas="modal__description">
+        If you have any additional questions or you want to clarify something before you make an
+        order please fill in your contact details. We will call you back.
+      </p>
+
+      <form class="modal__form">
+        <label class="modal__label" for="name">Name</label>
+        <div class="modal__container">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="modal__input"
+            placeholder="Kristin Watson"
+          />
+        </div>
+
+        <label class="modal__label" for="mail">Email</label>
+        <div class="modal__container">
+          <input
+            type="text"
+            name="mail"
+            id="mail"
+            class="modal__input"
+            placeholder="tanya.hill@example.com"
+          />
+        </div>
+
+        <button type="submit" class="modal__submit-button">Send</button>
+      </form>
+    </div>
+    <script src="./js/modal.js"></script>
   </div>
 </section>

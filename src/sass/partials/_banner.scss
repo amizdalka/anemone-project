@@ -4,6 +4,12 @@
   padding-top: 44px;
   overflow: visible;
   padding-bottom: 100px;
+  @include tablet {
+    padding-top: 38px;
+  }
+  @include desktop {
+    padding-top: 64px;
+  }
   &__text {
     padding-left: 11px;
     padding-right: 14px;
@@ -14,27 +20,70 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    @include tablet {
+      padding-left: 49px;
+      padding-right: 40px;
+      font-size: 24px;
+      line-height: 29px;
+    }
+    @include desktop {
+      padding-left: 210px;
+      padding-right: 0px;
+      font-size: 32px;
+      line-height: 39px;
+    }
   }
   &__flover {
     width: 145px;
     height: 274px;
+    @include tablet {
+      width: 390px;
+      height: 636px;
+    }
+    @include desktop {
+      width: 390px;
+      height: 636px;
+    }
   }
   &__button-conteiner {
     padding-right: 16px;
     padding-left: 8px;
     display: flex;
     align-items: center;
+    @include tablet {
+      padding-right: 20px;
+    }
+    @include desktop {
+      padding-right: 149px;
+    }
   }
   &__button {
+    cursor: pointer;
     height: 64px;
     width: 76px;
     border: none;
     background: #fff;
     display: flex;
+    @include tablet {
+      width: 145px;
+      height: 150px;
+    }
+    @include desktop {
+      width: 166px;
+      height: 166px;
+    }
   }
   &__icon {
     height: 64px;
     width: 76px;
+    @include tablet {
+      height: 145px;
+      width: 150px;
+    }
+    @include desktop {
+      height: 166px;
+      width: 166px;
+    }
   }
   &__title {
     position: absolute;
@@ -52,70 +101,11 @@
     font-weight: 400;
     font-size: 52px;
     line-height: 63px;
-  }
-  &__flover-conteiner {
-    display: flex;
-    position: relative;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .banner {
-    padding-top: 38px;
-    &__text {
-      padding-left: 49px;
-      padding-right: 40px;
-      font-size: 24px;
-      line-height: 29px;
-    }
-    &__button {
-      width: 145px;
-      height: 150px;
-    }
-    &__button-conteiner {
-      padding-right: 20px;
-    }
-    &__title {
+    @include tablet {
       font-size: 120px;
       line-height: 146px;
     }
-    &__flover {
-      width: 390px;
-      height: 636px;
-    }
-    &__icon {
-      height: 145px;
-      width: 150px;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .banner {
-    padding-top: 64px;
-    &__text {
-      padding-left: 210px;
-      padding-right: 0px;
-      font-size: 32px;
-      line-height: 39px;
-    }
-    &__flover {
-      width: 390px;
-      height: 636px;
-    }
-    &__button-conteiner {
-      padding-right: 149px;
-    }
-    &__button {
-      width: 166px;
-      height: 166px;
-    }
-    &__icon {
-      height: 166px;
-      width: 166px;
-    }
-    &__title {
+    @include desktop {
       height: 158px;
       margin: 0px;
       font-size: 160px;
@@ -131,7 +121,12 @@
         right: 25px;
       }
     }
-    &__flover-conteiner {
+  }
+  &__flover-conteiner {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    @include desktop {
       width: 877px;
       height: 729px;
     }
