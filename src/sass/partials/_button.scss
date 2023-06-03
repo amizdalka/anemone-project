@@ -22,6 +22,7 @@
   height: 44px;
 
   transition: background-color 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     background-color: $btnHoverColor;
@@ -32,59 +33,31 @@
   }
 }
 
-// .submit-button {
-//   @include desktop {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-//     background-color: $btnColor;
-//     border: none;
-//     border-radius: 8px;
+    background-color: $btnColor;
+    border: none;
+    border-radius: 8px;
 
-//     height: 50px;
-//     width: 416px;
+    height: 37px;
+    width: 240px;
 
-//     color: $secondaryFontColor;
-//     font-weight: 500;
-//     line-height: 22px;
+    color: $secondaryFontColor;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 17px;
 
-//     transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
 
-//     &:hover {
-//       background-color: $btnHoverColor;
-//     }
+    &:hover {
+      background-color: $btnHoverColor;
+    }
 
-//     &:focus {
-//       background-color: $btnFocusColor;
-//     }
-//   }
-
-//   @include tablet {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     background-color: $btnColor;
-//     border: none;
-//     border-radius: 8px;
-
-//     height: 37px;
-//     width: 240px;
-
-//     color: $secondaryFontColor;
-//     font-size: 14px;
-//     font-weight: 600;
-//     line-height: 17px;
-
-//     transition: background-color 0.5s ease;
-
-//     &:hover {
-//       background-color: $btnHoverColor;
-//     }
-
-//     &:focus {
-//       background-color: $btnFocusColor;
-//     }
-//   }
-// }
+    &:focus {
+      background-color: $btnFocusColor;
+    }
+}
