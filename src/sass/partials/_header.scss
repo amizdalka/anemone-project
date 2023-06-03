@@ -2,7 +2,7 @@
   width: 100vw;
   min-height: 60px;
   padding-top: 16px;
-  background-color: var(--white-cl);
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,31 +27,46 @@
   &__hamburger {
     display: inline-block;
     fill: #0e0e0e;
-    margin-right: 25px;
+    // margin-right: 10px;
     background-color: transparent;
     border: none;
 
     @include tablet {
       display: none;
     }
-  }
 
-  &__logo {
+    @include desktop {
+      display: none;
+    }
   }
 
   &__logo--svg {
     fill: #0e0e0e;
     background-color: transparent;
     border: none;
-  }
+    width: 54px;
+    height: 42px;
 
-  &__logo--icon {
+    @include tablet {
+      width: 86px;
+      height: 68px;
+    }
+    @include desktop {
+      width: 86px;
+      height: 68px;
+    }
   }
 
   &__nav {
     display: none;
 
     @include tablet {
+      display: flex;
+      margin: auto;
+      align-items: center;
+    }
+
+    @include desktop {
       display: flex;
       margin: auto;
       align-items: center;
@@ -67,6 +82,7 @@
     }
 
     @include desktop {
+      display: flex;
       gap: 48px;
     }
   }
@@ -84,9 +100,16 @@
   &__tel--btn {
     fill: #0e0e0e;
     margin-left: auto;
+    margin-right: 15px;
     border: none;
     background-color: transparent;
+
     @include tablet {
+      margin-left: unset;
+      margin-right: unset;
+    }
+
+    @include desktop {
       margin-left: unset;
     }
   }
