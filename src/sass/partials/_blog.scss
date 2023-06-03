@@ -1,45 +1,83 @@
 .blog {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__gallery {
     display: flex;
+    gap: 16px;
   }
   &__subscribe {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     gap: 24px;
-    @include tablet {
-      gap: 32px;
-    }
+    padding-bottom: 60px;
+  }
+  &__item {
+    width: 136px;
+    height: 181px;
+  }
+  &__item-off {
+    display: none;
   }
   &__button {
-    @include desktop {
-      height: 64px;
-      width: 280px;
+    height: 40px;
+    width: 170px;
+  }
+  &__swiper-button {
+    height: 50px;
+    width: 62px;
+    &:hover {
+      fill: #e25b41;
     }
-
-    @include tablet {
-      height: 64px;
-      width: 280px;
+  }
+  &__subscribe-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog {
+    &__gallery {
+      gap: 32px;
     }
-
-    @include mobile {
-      height: 40px;
-      width: 170px;
-
-      font-size: 18px;
+    &__subscribe {
+      gap: 32px;
+      padding-bottom: 100px;
+    }
+    &__subscribe-title {
+      padding-top: 18px;
+      font-size: 32px;
+      line-height: 39px;
+    }
+    &__button {
+      width: 280px;
+      height: 64px;
+    }
+    &__item {
+      width: 344px;
+      height: 398px;
     }
   }
 }
-.swiper__button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  &--prev {
-    width: 50px;
-    height: 50px;
-    @include tablet {
-      width: 61px;
-      height: 61px;
+@media screen and (min-width: 1200px) {
+  .blog {
+    &__gallery {
+      gap: 31px;
+    }
+    &__subscribe-title {
+      padding-top: 24px;
+    }
+    &__item {
+      width: 390px;
+      height: 421px;
+    }
+    &__item-off {
+      display: block;
     }
   }
 }

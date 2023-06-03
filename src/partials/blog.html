@@ -1,6 +1,6 @@
-<section class="blog section" id="blog">
-  <div class="container">
-    <h2 class="section__title">BLOG</h2>
+<section class="blog section container" id="blog">
+  <h2 class="section__title">BLOG</h2>
+  <div class="blog__container">
     <div class="blog__gallery">
       <img
         class="blog__item"
@@ -14,7 +14,6 @@
           images/blog-bouquet1-desktop@2x.jpg 780w
         "
         alt="Branches with green leafs"
-        sizes="(min-width: 768px) 344px, (min-width: 1200px) 390px, 100vw"
       />
       <img
         class="blog__item"
@@ -28,10 +27,9 @@
           images/blog-bouquet2-desktop@2x.jpg 780w
         "
         alt="One orange flower"
-        sizes="(min-width: 768px) 344px, (min-width: 1200px) 390px, 100vw"
       />
       <img
-        class="blog__item blog__item--off"
+        class="blog__item blog__item-off"
         src="images/blog-bouquet3-mobile.jpg"
         srcset="
           images/blog-bouquet3-mobile.jpg     136w,
@@ -42,20 +40,15 @@
           images/blog-bouquet3-desktop@2x.jpg 780w
         "
         alt="Two blue flowers with orange patterns"
-        sizes="(min-width: 768px) 344px, (min-width: 1200px) 390px, 100vw"
       />
     </div>
-    <div class="swiper__button">
-      <div class="swiper__button--prev">
-        <svg class="arrow">
-          <use href="./images/icons.svg#icon-arrow-left"></use>
-        </svg>
-      </div>
-      <div class="swiper__button--next">
-        <svg class="arrow">
-          <use href="./images/icons.svg#icon-arrow-right"></use>
-        </svg>
-      </div>
+    <div class="">
+      <svg class="blog__swiper-button">
+        <use href="./images/icons.svg#icon-arrow-left"></use>
+      </svg>
+      <svg class="blog__swiper-button">
+        <use href="./images/icons.svg#icon-arrow-right"></use>
+      </svg>
     </div>
     <div class="blog__subscribe">
       <h3 class="blog__subscribe-title">Follow to our newsletter</h3>
