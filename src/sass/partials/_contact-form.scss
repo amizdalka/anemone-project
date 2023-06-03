@@ -146,29 +146,29 @@
     }
 
 
-    &__input {
-      display: block;
-      width: 100%;
-      min-height: 37px;
-      border: rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
-      cursor: pointer;
-      padding-top: 10px;
-      padding-left: 12px;
-      resize: none;
+    // &__input {
+    //   display: block;
+    //   width: 100%;
+    //   min-height: 37px;
+    //   border: rgba(0, 0, 0, 0.3);
+    //   border-radius: 4px;
+    //   cursor: pointer;
+    //   padding-top: 10px;
+    //   padding-left: 12px;
+    //   resize: none;
 
-      @include tablet {
-        min-height: 50px;
-        padding-top: 12px;
-        padding-left: 16px;
-      }
+    //   @include tablet {
+    //     min-height: 50px;
+    //     padding-top: 12px;
+    //     padding-left: 16px;
+    //   }
 
 
-      &::placeholder {
-        @include font(500, 14px, 1.21);
-        color: rgba(0, 0, 0, 0.3);
-      }
-    }
+    //   &::placeholder {
+    //     @include font(500, 14px, 1.21);
+    //     color: rgba(0, 0, 0, 0.3);
+    //   }
+    // }
 
     
     &__submit {
