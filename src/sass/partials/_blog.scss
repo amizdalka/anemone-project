@@ -11,6 +11,24 @@
       gap: 32px;
     }
   }
+  &__button {
+    @include desktop {
+      height: 64px;
+      width: 280px;
+    }
+
+    @include tablet {
+      height: 64px;
+      width: 280px;
+    }
+
+    @include mobile {
+      height: 40px;
+      width: 170px;
+
+      font-size: 18px;
+    }
+  }
 }
 .swiper__button {
   display: flex;
