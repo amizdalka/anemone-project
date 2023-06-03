@@ -1,4 +1,6 @@
 .blog {
+  max-width: 1280px;
+  margin: 0 auto;
   &__container {
     display: flex;
     flex-direction: column;
