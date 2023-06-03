@@ -5,134 +5,86 @@
 // Używamy domieszek z działu "metodologia BEM"
 
 .button {
-  @include desktop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background-color: $btnColor;
-    border: none;
-    border-radius: 38px;
+  background-color: $btnColor;
+  border: none;
+  border-radius: 38px;
 
-    color: $secondaryFontColor;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 24px;
+  color: white;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 20px;
 
-    transition: background-color 0.5s ease;
+  width: 208px;
+  height: 44px;
 
-    &:hover {
-      background-color: $btnHoverColor;
-    }
+  transition: background-color 0.5s ease;
 
-    &:focus {
-      background-color: $btnFocusColor;
-    }
+  &:hover {
+    background-color: $btnHoverColor;
   }
 
-  @include tablet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: $btnColor;
-    border: none;
-    border-radius: 38px;
-
-    color: white;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 24px;
-
-    transition: background-color 0.5s ease;
-
-    &:hover {
-      background-color: $btnHoverColor;
-    }
-
-    &:focus {
-      background-color: $btnFocusColor;
-    }
-  }
-
-  @include mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: $btnColor;
-    border: none;
-    border-radius: 38px;
-
-    color: white;
-    font-weight: 500;
-    line-height: 24px;
-
-    transition: background-color 0.5s ease;
-
-    &:hover {
-      background-color: $btnHoverColor;
-    }
-
-    &:focus {
-      background-color: $btnFocusColor;
-    }
+  &:focus {
+    background-color: $btnFocusColor;
   }
 }
 
-.submit-button {
-  @include desktop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .submit-button {
+//   @include desktop {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    background-color: $btnColor;
-    border: none;
-    border-radius: 8px;
+//     background-color: $btnColor;
+//     border: none;
+//     border-radius: 8px;
 
-    height: 50px;
-    width: 416px;
+//     height: 50px;
+//     width: 416px;
 
-    color: $secondaryFontColor;
-    font-weight: 500;
-    line-height: 22px;
+//     color: $secondaryFontColor;
+//     font-weight: 500;
+//     line-height: 22px;
 
-    transition: background-color 0.5s ease;
+//     transition: background-color 0.5s ease;
 
-    &:hover {
-      background-color: $btnHoverColor;
-    }
+//     &:hover {
+//       background-color: $btnHoverColor;
+//     }
 
-    &:focus {
-      background-color: $btnFocusColor;
-    }
-  }
+//     &:focus {
+//       background-color: $btnFocusColor;
+//     }
+//   }
 
-  @include tablet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//   @include tablet {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    background-color: $btnColor;
-    border: none;
-    border-radius: 8px;
+//     background-color: $btnColor;
+//     border: none;
+//     border-radius: 8px;
 
-    height: 37px;
-    width: 240px;
+//     height: 37px;
+//     width: 240px;
 
-    color: $secondaryFontColor;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
+//     color: $secondaryFontColor;
+//     font-size: 14px;
+//     font-weight: 600;
+//     line-height: 17px;
 
-    transition: background-color 0.5s ease;
+//     transition: background-color 0.5s ease;
 
-    &:hover {
-      background-color: $btnHoverColor;
-    }
+//     &:hover {
+//       background-color: $btnHoverColor;
+//     }
 
-    &:focus {
-      background-color: $btnFocusColor;
-    }
-  }
-}
+//     &:focus {
+//       background-color: $btnFocusColor;
+//     }
+//   }
+// }
