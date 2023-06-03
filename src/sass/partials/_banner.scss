@@ -1,10 +1,11 @@
 .banner {
   display: flex;
   justify-content: center;
+  gap: 14px;
   padding-top: 44px;
+  padding-bottom: 100px;
   &__text {
     padding-left: 11px;
-    padding-right: 14px;
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -19,7 +20,6 @@
   }
   &__button-conteiner {
     padding-right: 16px;
-    padding-left: 8px;
     display: flex;
     align-items: center;
   }
@@ -32,7 +32,7 @@
   }
   &__icon {
     height: 64px;
-    width: 76px;
+    width: 64px;
   }
   &__title {
     position: absolute;
@@ -40,16 +40,16 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     bottom: 0px;
-    height: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px;
+    margin: 0;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 52px;
     line-height: 63px;
+    transform: translate(4px, 35px);
   }
   &__flover-conteiner {
     display: flex;
@@ -61,9 +61,9 @@
 @media screen and (min-width: 768px) {
   .banner {
     padding-top: 38px;
+    gap: 40px;
     &__text {
       padding-left: 49px;
-      padding-right: 40px;
       font-size: 24px;
       line-height: 29px;
     }
@@ -77,6 +77,7 @@
     &__title {
       font-size: 120px;
       line-height: 146px;
+      transform: translate(5px, 80px);
     }
     &__flover {
       width: 390px;
@@ -94,7 +95,6 @@
     padding-top: 64px;
     &__text {
       padding-left: 210px;
-      padding-right: 0px;
       font-size: 32px;
       line-height: 39px;
     }
@@ -115,9 +115,9 @@
     }
     &__title {
       height: 158px;
-      margin: 0px;
       font-size: 160px;
       line-height: 195px;
+      transform: none;
       &::after {
         content: '';
         width: 58px;
