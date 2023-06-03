@@ -1,15 +1,22 @@
-  <footer>
+<footer>
+  <div class="container">
     <div class="footer">
+      <div class="footer__logo">
+        <a href="./index.html"
+          ><svg>
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
       <div class="footer__container">
         <h3>Navigation</h3>
         <ul>
-          <li>Anemone</li>
-          <li>About us</li>
-          <li>Store</li>
-          <li>Delivery</li>
+          <li><a href="#banner">Anemone</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#delivery">Delivery</a></li>
         </ul>
       </div>
-
       <div class="footer__container">
         <h3>Opening times</h3>
         <span>Every day</span>
@@ -17,17 +24,24 @@
       </div>
       <div class="footer__container">
         <h3>Contacts</h3>
-        <span>+38 063 123 45 67</span>
-        <span>anemonestudio@example.com</span>
-        <address>Reitarska Street, 11 Kyiv, Ukraine</address>
+        <div class="footer__container--contacts">
+          <a href="tel:+380631234567">+38 063 123 45 67</a>
+          <a href=" " class="footer__mail"><span>anemonestudio</span><span>@example.com</span></a>
+          <address>Reitarska Street, 11 Kyiv, Ukraine</address>
+        </div>
       </div>
       <div class="footer__container footer__container--icons">
-        <svg class="footer__icon">
-          <use href="./images/icons.svg#icon-facebook"></use>
-        </svg>
-        <svg class="footer__icon">
-          <use href="./images/icons.svg#icon-instagram"></use>
-        </svg>
+        <a href=" "
+          ><svg class="footer__icon">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a href=""
+          ><svg class="footer__icon">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>

@@ -7,11 +7,14 @@
 
 @import './utils/mixins';
 
+@import './base/reset';
+
 @import './utils/vars';
 
 @import './base/common';
 
 @import './partials/about';
+@import './partials/store';
 @import './partials/banner';
 @import './partials/blog';
 @import './partials/button';
@@ -19,9 +22,5 @@
 @import './partials/delivery';
 @import './partials/footer';
 @import './partials/header';
-
-
-
-
 @import './partials/newsletter';
-
+@import './partials/input';
