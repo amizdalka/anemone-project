@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+  justify-items: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include tablet {
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      gap: 54px;
+    }
+    @include desktop{
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+      }
+  }
+  &__description {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    @include tablet {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 22px;
+    }
+  }
+  &__picture {
+    width: 288px;
+    height: 178px;
+
+    @include tablet {
+      width: 344px;
+      height: 217px;
+    }
+
+    @include desktop {
+      width: 632px;
+      height: 344px;
+    }
+  }
+}
