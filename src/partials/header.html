@@ -1,0 +1,78 @@
+<header class="header">
+  <div class="container header__wrapper">
+    <!-- logo svg link -->
+    <a class="header__logo" href="index.html">
+      <svg class="header__logo--svg" width="45" height="35">
+        <use class="header__logo--icon" href="./images/icons.svg#icon-logo"></use></svg
+    ></a>
+
+    <!-- menu nav use id to anchor menu-->
+    <nav class="header__nav">
+      <ul class="header__nav--list">
+        <li>
+          <a class="header__nav--list-item" href="#anemone">Anemone</a>
+        </li>
+        <li>
+          <a class="header__nav--list-item" href="#about-us">About us</a>
+        </li>
+        <li><a class="header__nav--list-item" href="#store">Store</a></li>
+        <li>
+          <a class="header__nav--list-item" href="#delivery">Delivery</a>
+        </li>
+        <li>
+          <a class="header__nav--list-item" href="#blog">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- contact button -->
+    <button data-modal-open type="button" class="header__tel--btn">
+      <svg class="header__tel--svg" width="22" height="22">
+        <use class="header__tel--icon" href="./images/icons.svg#icon-tel"></use>
+      </svg>
+    </button>
+
+    <!-- navi button hamburger-->
+    <button
+      class="header__hamburger js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <!-- <span class="hamburger-box"></span>
+          <span class="hamburger-inner"> </span> -->
+
+      <svg width="24" height="24">
+        <use href="./images/icons.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button type="button" class="menu-container__close-btn js-close-menu">
+    <svg width="24" height="24">
+      <use href="./images/icons.svg#icon-x"></use>
+    </svg>
+  </button>
+
+  <ul class="menu-container__link-list">
+    <li class="menu-container__link">
+      <a class="menu-container__link-list-item" href="#anemone">Anemone</a>
+    </li>
+    <li class="menu-container__link">
+      <a class="menu-container__link-list-item" href="#about-us">About us</a>
+    </li>
+    <li class="menu-container__link">
+      <a class="menu-container__link-list-item" href="#store">Store</a>
+    </li>
+    <li class="menu-container__link">
+      <a class="menu-container__link-list-item" href="#delivery">Delivery</a>
+    </li>
+    <li class="menu-container__link">
+      <a class="menu-container__link-list-item" href="#blog">Blog</a>
+    </li>
+  </ul>
+
+  <script src="./js/mobile-menu.js"></script>
+</div>
