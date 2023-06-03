@@ -7,6 +7,8 @@
 
 @import './utils/mixins';
 
+@import './base/reset';
+
 @import './utils/vars';
 
 @import './base/common';
@@ -19,4 +21,3 @@
 @import './partials/delivery';
 @import './partials/footer';
 @import './partials/header';
-
