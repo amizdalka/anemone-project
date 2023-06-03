@@ -1,4 +1,4 @@
-<section class="blog section container" id="blog">
+<section class="blog section" id="blog">
   <h2 class="section__title">BLOG</h2>
   <div class="blog__container">
     <div class="blog__gallery">
@@ -52,7 +52,49 @@
     </div>
     <div class="blog__subscribe">
       <h3 class="blog__subscribe-title">Follow to our newsletter</h3>
-      <button data-modal-open type="button" class="button">Subscribe</button>
+      <button data-modal-open type="button" class="button" data-modal-open>Subscribe</button>
     </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__btn" data-modal-close>
+        <svg class="modal__close" width="16" height="16">
+          <use href="/src/images/icons.svg#btn-close-icon"></use>
+        </svg>
+      </button>
+
+      <h1 class="modal__header">Contact us</h1>
+      <p clas="modal__description">
+        If you have any additional questions or you want to clarify something before you make an
+        order please fill in your contact details. We will call you back.
+      </p>
+
+      <form class="modal__form">
+        <label class="modal__label" for="name">Name</label>
+        <div class="modal__container">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="modal__input"
+            placeholder="Kristin Watson"
+          />
+        </div>
+
+        <label class="modal__label" for="mail">Email</label>
+        <div class="modal__container">
+          <input
+            type="text"
+            name="mail"
+            id="mail"
+            class="modal__input"
+            placeholder="tanya.hill@example.com"
+          />
+        </div>
+
+        <button type="submit" class="modal__submit-button">Send</button>
+      </form>
+    </div>
+    <script src="./js/modal.js"></script>
   </div>
 </section>
