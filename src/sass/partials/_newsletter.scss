@@ -25,4 +25,35 @@
         height: 50px;
       }
     }
+
+    .modal__close{
+        position:absolute;
+        top:8px;
+        right:8px;
+        background-color: #FFFFFF;
+        border:none;
+        cursor:pointer;
+        color: #212121;
+        font-size: 22px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      
+      }
+            
+            .icon-close-svg{
+             width:11px;
+             height: 11px;
+            } 
   
+.modal__btn-close{
+    border:none;
+}
+
+.modal__img{
+    width: 100%;
+    height: auto;
+}
