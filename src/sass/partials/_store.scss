@@ -1,27 +1,33 @@
 .store {
+
   &__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
+    max-width: 288px;
+    margin: 0 auto;
 
     @include tablet {
       gap: 32px;
+      max-width: 720px;
     }
 
     @include desktop {
       gap: 32px;
+      max-width: 1232px;
     }
   }
 
   &__item {
+    
     &-title {
       font-family: 'Montserrat';
+      font-size: 16px;
       font-style: normal;
       font-weight: 500;
       display: inline-flex;
       align-items: center;
-      width: 100%;
       white-space: nowrap;
       gap: 8px;
       margin-top: 12px;
@@ -79,8 +85,20 @@
   }
 
   &__card {
-    width: 100%;
+    max-width: 136px;
     display: block;
+
+    @include tablet {
+      max-width: 344px;
+    }
+
+    @include desktop {
+      max-width: 600px;
+    }
+  }
+
+  &__photo {
+    max-width: 136px;
 
     @include tablet {
       max-width: 344px;
