@@ -126,29 +126,29 @@
     }
 }
 
-.store__button{
+// .store__button{
 
-    display: flex;
-    // font-weight: 500;
-    line-height: 24px;
-    height: 40px;
-    width: 170px;
-    font-size: 20px;
-}
+//     display: flex;
+//     // font-weight: 500;
+//     line-height: 24px;
+//     height: 40px;
+//     width: 170px;
+//     font-size: 20px;
+// }
 
-.store__button {
-    @include desktop {
-        height: 64px;
-        width: 280px;
-    }
+// .store__button {
+//     @include desktop {
+//         height: 64px;
+//         width: 280px;
+//     }
 
-    @include tablet {
-        height: 64px;
-        width: 280px;
-    }
+//     @include tablet {
+//         height: 64px;
+//         width: 280px;
+//     }
 
 
-}
+// }
 
 img {
     display: block;
