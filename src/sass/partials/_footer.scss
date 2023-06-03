@@ -1,6 +1,10 @@
+footer {
+  background-color: $footerBgColor;
+  background-size: cover;
+}
+
 .footer {
   box-sizing: border-box;
-  background-color: $footerBgColor;
   height: 389px;
   row-gap: 32px;
   column-gap: 32px;
