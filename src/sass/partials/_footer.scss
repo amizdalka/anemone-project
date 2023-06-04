@@ -72,6 +72,7 @@ footer {
     stroke: $footerIconColor;
     width: 28px;
     height: 28px;
+    transition: stroke 0.5s ease;
   }
   &__icon:hover {
     stroke: $btnHoverColor;
@@ -154,7 +155,7 @@ footer {
       width: 73px;
       height: 57px;
 
-      transition: color 0.5s ease;
+      transition: all 0.5s ease;
     }
     &__logo svg:hover {
       fill: $btnHoverColor;
