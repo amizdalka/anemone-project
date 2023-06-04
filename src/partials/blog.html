@@ -1,100 +1,104 @@
 <section class="blog section" id="blog">
-  <h2 class="section__title">BLOG</h2>
-  <div class="blog__container">
-    <div class="blog__gallery">
-      <img
-        class="blog__item"
-        src="images/blog-bouquet1-mobile.jpg"
-        srcset="
-          images/blog-bouquet1-mobile.jpg     136w,
-          images/blog-bouquet1-mobile@2x.jpg  272w,
-          images/blog-bouquet1-tablet.jpg     344w,
-          images/blog-bouquet1-tablet@2x.jpg  688w,
-          images/blog-bouquet1-desktop.jpg    390w,
-          images/blog-bouquet1-desktop@2x.jpg 780w
-        "
-        alt="Branches with green leafs"
-      />
-      <img
-        class="blog__item"
-        src="images/blog-bouquet2-mobile.jpg"
-        srcset="
-          images/blog-bouquet2-mobile.jpg     136w,
-          images/blog-bouquet2-mobile@2x.jpg  272w,
-          images/blog-bouquet2-tablet.jpg     344w,
-          images/blog-bouquet2-tablet@2x.jpg  688w,
-          images/blog-bouquet2-desktop.jpg    390w,
-          images/blog-bouquet2-desktop@2x.jpg 780w
-        "
-        alt="One orange flower"
-      />
-      <img
-        class="blog__item blog__item-off"
-        src="images/blog-bouquet3-mobile.jpg"
-        srcset="
-          images/blog-bouquet3-mobile.jpg     136w,
-          images/blog-bouquet3-mobile@2x.jpg  272w,
-          images/blog-bouquet3-tablet.jpg     344w,
-          images/blog-bouquet3-tablet@2x.jpg  688w,
-          images/blog-bouquet3-desktop.jpg    390w,
-          images/blog-bouquet3-desktop@2x.jpg 780w
-        "
-        alt="Two blue flowers with orange patterns"
-      />
-    </div>
-    <div class="">
-      <svg class="blog__swiper-button">
-        <use href="./images/icons.svg#icon-arrow-left"></use>
-      </svg>
-      <svg class="blog__swiper-button">
-        <use href="./images/icons.svg#icon-arrow-right"></use>
-      </svg>
-    </div>
-    <div class="blog__subscribe">
-      <h3 class="blog__subscribe-title">Follow to our newsletter</h3>
-      <button type="button" class="button blog-button" data-modal-subscribe-open>Subscribe</button>
-    </div>
-  </div>
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="modal__btn" data-modal-close>
-        <svg class="modal__close" width="16" height="16">
-          <use href="/src/images/icons.svg#btn-close-icon"></use>
+  <div class="container">
+    <h2 class="section__title">BLOG</h2>
+    <div class="blog__container">
+      <div class="blog__gallery">
+        <img
+          class="blog__item"
+          src="images/blog-bouquet1-mobile.jpg"
+          srcset="
+            images/blog-bouquet1-mobile.jpg     136w,
+            images/blog-bouquet1-mobile@2x.jpg  272w,
+            images/blog-bouquet1-tablet.jpg     344w,
+            images/blog-bouquet1-tablet@2x.jpg  688w,
+            images/blog-bouquet1-desktop.jpg    390w,
+            images/blog-bouquet1-desktop@2x.jpg 780w
+          "
+          alt="Branches with green leafs"
+        />
+        <img
+          class="blog__item"
+          src="images/blog-bouquet2-mobile.jpg"
+          srcset="
+            images/blog-bouquet2-mobile.jpg     136w,
+            images/blog-bouquet2-mobile@2x.jpg  272w,
+            images/blog-bouquet2-tablet.jpg     344w,
+            images/blog-bouquet2-tablet@2x.jpg  688w,
+            images/blog-bouquet2-desktop.jpg    390w,
+            images/blog-bouquet2-desktop@2x.jpg 780w
+          "
+          alt="One orange flower"
+        />
+        <img
+          class="blog__item blog__item-off"
+          src="images/blog-bouquet3-mobile.jpg"
+          srcset="
+            images/blog-bouquet3-mobile.jpg     136w,
+            images/blog-bouquet3-mobile@2x.jpg  272w,
+            images/blog-bouquet3-tablet.jpg     344w,
+            images/blog-bouquet3-tablet@2x.jpg  688w,
+            images/blog-bouquet3-desktop.jpg    390w,
+            images/blog-bouquet3-desktop@2x.jpg 780w
+          "
+          alt="Two blue flowers with orange patterns"
+        />
+      </div>
+      <div class="">
+        <svg class="blog__swiper-button">
+          <use href="./images/icons.svg#icon-arrow-left"></use>
         </svg>
-      </button>
+        <svg class="blog__swiper-button">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+      <div class="blog__subscribe">
+        <h3 class="blog__subscribe-title">Follow to our newsletter</h3>
+        <button type="button" class="button blog-button" data-modal-subscribe-open>
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__btn" data-modal-close>
+          <svg class="modal__close" width="16" height="16">
+            <use href="/src/images/icons.svg#btn-close-icon"></use>
+          </svg>
+        </button>
 
-      <h1 class="modal__header">Contact us</h1>
-      <p clas="modal__description">
-        If you have any additional questions or you want to clarify something before you make an
-        order please fill in your contact details. We will call you back.
-      </p>
+        <h1 class="modal__header">Contact us</h1>
+        <p clas="modal__description">
+          If you have any additional questions or you want to clarify something before you make an
+          order please fill in your contact details. We will call you back.
+        </p>
 
-      <form class="modal__form">
-        <label class="modal__label" for="name">Name</label>
-        <div class="modal__container">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="modal__input"
-            placeholder="Kristin Watson"
-          />
-        </div>
+        <form class="modal__form">
+          <label class="modal__label" for="name">Name</label>
+          <div class="modal__container">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="modal__input"
+              placeholder="Kristin Watson"
+            />
+          </div>
 
-        <label class="modal__label" for="mail">Email</label>
-        <div class="modal__container">
-          <input
-            type="text"
-            name="mail"
-            id="mail"
-            class="modal__input"
-            placeholder="tanya.hill@example.com"
-          />
-        </div>
+          <label class="modal__label" for="mail">Email</label>
+          <div class="modal__container">
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              class="modal__input"
+              placeholder="tanya.hill@example.com"
+            />
+          </div>
 
-        <!-- <button data-modal-open1="" class="x">Subscribe</button> -->
-        <button type="submit" class="modal__submit-button">Send</button>
-      </form>
+          <!-- <button data-modal-open1="" class="x">Subscribe</button> -->
+          <button type="submit" class="modal__submit-button">Send</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
