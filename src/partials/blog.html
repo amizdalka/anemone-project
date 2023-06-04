@@ -1,6 +1,6 @@
 <section class="blog section" id="blog">
-  <div class="container">
-    <h2 class="section__title">BLOG</h2>
+  <h2 class="section__title">BLOG</h2>
+  <div class="blog__container">
     <div class="blog__gallery">
       <img
         class="blog__item"
@@ -14,7 +14,6 @@
           images/blog-bouquet1-desktop@2x.jpg 780w
         "
         alt="Branches with green leafs"
-        sizes="(min-width: 768px) 344px, (min-width: 1200px) 390px, 100vw"
       />
       <img
         class="blog__item"
@@ -28,10 +27,9 @@
           images/blog-bouquet2-desktop@2x.jpg 780w
         "
         alt="One orange flower"
-        sizes="(min-width: 768px) 344px, (min-width: 1200px) 390px, 100vw"
       />
       <img
-        class="blog__item blog__item--off"
+        class="blog__item blog__item-off"
         src="images/blog-bouquet3-mobile.jpg"
         srcset="
           images/blog-bouquet3-mobile.jpg     136w,
@@ -42,24 +40,61 @@
           images/blog-bouquet3-desktop@2x.jpg 780w
         "
         alt="Two blue flowers with orange patterns"
-        sizes="(min-width: 768px) 344px, (min-width: 1200px) 390px, 100vw"
       />
     </div>
-    <div class="swiper__button">
-      <div class="swiper__button--prev">
-        <svg class="arrow">
-          <use href="./images/icons.svg#icon-arrow-left"></use>
-        </svg>
-      </div>
-      <div class="swiper__button--next">
-        <svg class="arrow">
-          <use href="./images/icons.svg#icon-arrow-right"></use>
-        </svg>
-      </div>
+    <div class="">
+      <svg class="blog__swiper-button">
+        <use href="./images/icons.svg#icon-arrow-left"></use>
+      </svg>
+      <svg class="blog__swiper-button">
+        <use href="./images/icons.svg#icon-arrow-right"></use>
+      </svg>
     </div>
     <div class="blog__subscribe">
       <h3 class="blog__subscribe-title">Follow to our newsletter</h3>
-      <button data-modal-open type="button" class="blog__button button">Subscribe</button>
+      <button data-modal-open type="button" class="button blog-button" data-modal-open>Subscribe</button>
     </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__btn" data-modal-close>
+        <svg class="modal__close" width="16" height="16">
+          <use href="/src/images/icons.svg#btn-close-icon"></use>
+        </svg>
+      </button>
+
+      <h1 class="modal__header">Contact us</h1>
+      <p clas="modal__description">
+        If you have any additional questions or you want to clarify something before you make an
+        order please fill in your contact details. We will call you back.
+      </p>
+
+      <form class="modal__form">
+        <label class="modal__label" for="name">Name</label>
+        <div class="modal__container">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="modal__input"
+            placeholder="Kristin Watson"
+          />
+        </div>
+
+        <label class="modal__label" for="mail">Email</label>
+        <div class="modal__container">
+          <input
+            type="text"
+            name="mail"
+            id="mail"
+            class="modal__input"
+            placeholder="tanya.hill@example.com"
+          />
+        </div>
+
+        <button type="submit" class="modal__submit-button">Send</button>
+      </form>
+    </div>
+    <script src="./js/modal.js"></script>
   </div>
 </section>

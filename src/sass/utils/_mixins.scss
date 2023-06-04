@@ -4,22 +4,22 @@
     }
   }
   
-  @mixin desktop {
-    @media screen and (min-width: 1200px) {
-      @content;
-    }
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin font($weight: false, $size: false, $line: false, $letter: false) {
+
+  @if $weight {
+  font-weight: $weight;
   }
 
-  @mixin font($weight: false, $size: false, $line: false, $letter: false) {
+  @if $size {
+    font-size: $size;
+  }
 
-    @if $weight {
-    font-weight: $weight;
-    }
-
-    @if $size {
-      font-size: $size;
-    }
-
-    @if $line {
-      line-height: $line;
-    }}
+  @if $line {
+    line-height: $line;
+  }}

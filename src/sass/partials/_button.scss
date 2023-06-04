@@ -5,121 +5,64 @@
 // Używamy domieszek z działu "metodologia BEM"
 
 .button {
-  @include desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  background-color: $btnColor;
+  border: none;
+  border-radius: 38px;
 
-      background-color: $btnColor;
-      border: none;
-      border-radius: 38px;
+  color: white;
+  font-weight: 500;
+  line-height: 24px;
 
-      color: $secondaryFontColor;
-      font-size: 28px;
-      font-weight: 500;
-      line-height: 24px;
+  width: 208px;
+  height: 44px;
 
-      transition: background-color 0.5s ease;
+  margin: 0 auto;
 
-      &:hover {
-        background-color: $btnHoverColor;
-      }
+  transition: background-color 0.5s ease;
+  cursor: pointer;
 
-      &:focus {
-        background-color: $btnFocusColor;
-      }
-    }
-
-    .store {
-      &__button {
-        height: 64px;
-        width: 280px;
-      }
-    }
-
-    .blog {
-      &__button {
-        height: 64px;
-        width: 280px;
-      }
-    }
-
-    .submit-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background-color: $btnColor;
-      border: none;
-      border-radius: 8px;
-
-      height: 50px;
-      width: 416px;
-
-      color: $secondaryFontColor;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22px;
-
-      transition: background-color 0.5s ease;
-
-      &:hover {
-        background-color: $btnHoverColor;
-      }
-
-      &:focus {
-        background-color: $btnFocusColor;
-      }
-    }
+  &:hover {
+    background-color: $btnHoverColor;
   }
 
-
-  .button {
-    @include tablet {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: $btnColor;
-    border: none;
-    border-radius: 38px;
-
-    color: white;
-    font-weight: 500;
-    line-height: 24px;
-
-    transition: background-color 0.5s ease;
-
-    &:hover {
-      background-color: $btnHoverColor;
-    }
-
-    &:focus {
-      background-color: $btnFocusColor;
-    }
+  &:focus {
+    background-color: $btnFocusColor;
   }
+}
 
-  .store {
-    &__button {
-      height: 44px;
-      width: 208px;
+.store-button {
+  width: 208px;
+  height: 44px;
 
-      font-size: 20px;
-    }
+  font-size: 20px;
+
+  @include tablet {
+    width: 280px;
+    height: 64px;
+
+    font-size: 28px;
   }
+}
 
-  .blog {
-    &__button {
-      height: 40px;
-      width: 170px;
+.blog-button {
+  width: 170px;
+  height: 40px;
 
-      font-size: 18px;
-    }
+  font-size: 18px;
+
+  @include tablet {
+    width: 280px;
+    height: 64px;
+
+    font-size: 28px;
   }
+}
 
-  .submit-button {
+.submit-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,11 +75,12 @@
     width: 240px;
 
     color: $secondaryFontColor;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 17px;
 
     transition: background-color 0.5s ease;
+    cursor: pointer;
 
     &:hover {
       background-color: $btnHoverColor;
@@ -145,5 +89,4 @@
     &:focus {
       background-color: $btnFocusColor;
     }
-  }
 }

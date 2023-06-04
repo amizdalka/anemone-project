@@ -1,0 +1,48 @@
+.about {
+  justify-items: center;
+  margin: 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include tablet {
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      gap: 54px;
+    }
+    @include desktop{
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+      }
+  }
+  &__description {
+    line-height: 1.25;
+    letter-spacing: 0;
+    text-align: left;
+    color: $primaryFontColor;
+    @include tablet {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 22px;
+    }
+  }
+  &__picture {
+    width: 288px;
+    height: 178px;
+
+    @include tablet {
+      width: 344px;
+      height: 217px;
+    }
+
+    @include desktop {
+      width: 632px;
+      height: 344px;
+    }
+  }
+}
