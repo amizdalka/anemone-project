@@ -16,10 +16,11 @@
   color: white;
   font-weight: 500;
   line-height: 24px;
-  font-size: 20px;
 
   width: 208px;
   height: 44px;
+
+  margin: 0 auto;
 
   transition: background-color 0.5s ease;
   cursor: pointer;
@@ -30,6 +31,34 @@
 
   &:focus {
     background-color: $btnFocusColor;
+  }
+}
+
+.store-button {
+  width: 208px;
+  height: 44px;
+
+  font-size: 20px;
+
+  @include tablet {
+    width: 280px;
+    height: 64px;
+
+    font-size: 28px;
+  }
+}
+
+.blog-button {
+  width: 170px;
+  height: 40px;
+
+  font-size: 18px;
+
+  @include tablet {
+    width: 280px;
+    height: 64px;
+
+    font-size: 28px;
   }
 }
 
