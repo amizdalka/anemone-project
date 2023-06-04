@@ -1,34 +1,3 @@
-
-
-.textarea{
-    display: flex;
-    flex-direction: column;
-}
-.modal1{
-    display: flex;
-    flex-direction: column;
-    @include tablet{
-      width: 588px;
-    }
-    @include desktop{
-      width: 860px;
-      flex-direction: row;
-      position: absolute;
-    }
-}
-
-.modal1__image{
-    width:100%;
-    object-fit: cover;
-    height: auto;
-    display: block;
-    margin:0 auto;
-    padding: 0;
-    @include desktop{
-      height: 100%;
-    }
-  }
-
 .backdrop {
   pointer-events: auto;
   position: fixed;
@@ -43,13 +12,11 @@
   align-items: center;
 }
 
-
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
 }
-
 
 .is-hidden .modal1 {
   transform: translate(-50%, -50%) scale (0) rotate(45 deg);
@@ -59,8 +26,21 @@
   transform: translate(-50%, -50%) scale(0) rotate(-180deg);
 }
 
+// .modal1{
+//   display: flex;
+//   flex-direction: column;
+//   @include tablet{
+//     width: 588px;
+//   }
+//   @include desktop{
+//     width: 860px;
+//     flex-direction: row;
+//     position: absolute;
+//   }
 
-.modal,.modal1{
+// }
+
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,14 +48,18 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #ffffff;
   width: 272px;
+  padding: 0;
 
   @include tablet {
     width: 588px;
+  }
 
+  @include desktop {
+    width: 860px;
   }
 
   &__close {
-    background-color:transparent;
+    background-color: transparent;
     position: absolute;
     top: 16px;
     right: 16px;
@@ -94,7 +78,6 @@
     }
   }
 
-
   &__svg {
     fill: Solid #000000;
 
@@ -106,62 +89,106 @@
     }
   }
 
+  &__layout {
+    display: flex;
+    flex-direction: column;
 
+    @include desktop {
+      flex-direction: row;
+    }
+  }
 
+  &__image {
+    max-height: 121px;
+    width: 100%;
 
+    object-fit: cover;
+    display: block;
 
+    margin: 0 auto;
+    padding: 0;
+    @include tablet {
+      max-height: 271px;
+    }
 
-  &__description {
-    @include font(500, 12px, 1.25);
-    color: $formFontColor;
-    padding-bottom: 18px;
-    text-align: center;
+    @include desktop {
+      max-height: 528px;
+    }
+  }
+
+  &__textarea {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 16px 28px;
 
     @include tablet {
-      @include font(500, 16px, 1.25);
-          }
-          @include desktop{
-            @include font(500, 18, 1.25);
-          }
+      padding: 28px 118px 40px;
+    }
+
+    @include desktop {
+      padding: 111px 40px;
+    }
   }
-}
 
-.modal__header {
-  @include font(600, 20px, 1.2);
-  color: #000000;
-  text-align:center;
-  margin-bottom: 14px;
-  padding-top: 18px;
+  &__header {
+    @include font(600, 20px, 1.2);
+    color: #000000;
+    text-align: center;
+    margin-bottom: 14px;
 
-  @include tablet {
-    @include font(600, 32px, 1.21);
-    margin-bottom: 24px;
-  }
-}
+    @include tablet {
+      @include font(600, 32px, 1.21);
+      margin-bottom: 24px;
+    }
 
-  .modal-form {
-    margin: auto;
-    max-width:85%;
+    &__description {
+      @include font(500, 12px, 1.25);
+      color: $formFontColor;
+      padding-bottom: 18px;
+      text-align: center;
 
-    &__name {
-      @include font(500, 10px, 1.2);
-      margin-bottom: 8px;
-      margin-top: 18px;
-      padding-left: 18px;
-      padding-right: 36px;
-
+      @include tablet {
+        @include font(500, 16px, 1.25);
+        padding-bottom: 32px;
+      }
       @include desktop {
-        @include font(500, 14px, 1.2);
-        margin-top: 32px;
+        @include font(500, 18px, 1.25);
+        padding-bottom: 32px;
       }
     }
 
-    &__input {
+    // &__wrapper {
+    //   margin: 18px auto 0;
+
+    //   @include tablet {
+    //     margin: 32px;
+    //   }
+
+    //   @include desktop {
+    //     margin: 32px;
+    //   }
+    // }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    &__form-label {
+      @include font(500, 10px, 1.2);
+      color: $formFontColor;
+
+      @include tablet {
+        @include font(500, 14px, 1.2);
+      }
+    }
+
+    &__form-input {
       @include font(500, 12px, 1.25);
-      width: 236px;    
+      width: 236px;
       display: block;
       margin-top: 8px;
-    
 
       outline: none;
       border: 1px solid #d7d7d7;
@@ -171,39 +198,19 @@
         margin-bottom: 24px;
         padding: 16px 0 16px 16px;
         font-size: 14px;
-        width: 336px; 
-
+        width: 336px;
       }
 
-      &::placeholder {
+      &__form-input::placeholder {
         color: #d7d7d7;
       }
 
-      &:is(:hover, :focus) {
+      &__form-input:is(:hover, :focus) {
         border-color: #111111b2;
       }
     }
-    
 
-    .modal-form__input:valid:not(:placeholder-shown) {
-      border-color: green;
-    }
-
-    .modal-form__input:invalid:not(:placeholder-shown) {
-      border-color: red;
-    }
-
-    &__label {
-      @include font(500, 10px, 1.2);
-      color: $formFontColor;
-
-      @include tablet {
-        @include font(500, 14px, 1.2);
-      }
-    }
-
-
-    &__submit {
+    &__form-submit {
       @include font(600, 14px, 1.2);
       position: relative;
       display: block;
@@ -223,12 +230,11 @@
 
       transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-      &:hover {
+      &__form-submit:hover {
         background-color: $btnHoverColor;
       }
 
-      &:focus {
+      &__form-submit:focus {
         background-color: $btnFocusColor;
       }
 
@@ -239,29 +245,56 @@
         font-size: 18px;
       }
     }
-
   }
+}
 
-  .modal__form-label{
-    font-weight: 500;
-      font-size: 10px;
-      line-height: 1.2;
-      color: #5C5C5C;
-      @include tablet{
-        font-size:14px;      
-      }
+.modal__form-input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
 
-  }
+.modal__form-input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+// .name {
+//   @include font(500, 10px, 1.2);
+//   margin-bottom: 8px;
+//   margin-top: 18px;
+//   padding-left: 18px;
+//   padding-right: 36px;
 
- 
+//   @include desktop {
+//     @include font(500, 14px, 1.2);
+//     margin-top: 32px;
+//   }
+// }
 
-  .right-side{
-    flex-direction: column;
-    display: flex;
-    @include desktop{
-      background: #fff;
-      min-width: 430px;
-      min-height: 528px;
-      padding: 111px 40px 32px 40px;
-    }
-  }
+// &__label {
+//   @include font(500, 10px, 1.2);
+//   color: $formFontColor;
+
+//   @include tablet {
+//     @include font(500, 14px, 1.2);
+//   }
+// }
+
+// .modal__form-label{
+//   font-weight: 500;
+//   font-size: 10px;
+//   line-height: 1.2;
+//   color: #5C5C5C;
+//   @include tablet{
+//     font-size:14px;
+//   }
+
+// }
+
+// .right-side{
+//   flex-direction: column;
+//   display: flex;
+//   @include desktop{
+//     background: #fff;
+//     min-width: 430px;
+//     min-height: 528px;
+//     padding: 111px 40px 32px 40px;
+//   }
+// }

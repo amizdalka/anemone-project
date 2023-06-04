@@ -1,44 +1,50 @@
 <!-- <button data-modal-open1="" class="x">Subscribe</button> -->
 
 <div class="backdrop is-hidden" data-modal-subscribe>
-  <div class="modal1">
+
+  <div class="modal">
     <button type="button" class="modal__close" data-modal-subscribe-close>
       <svg class="modal__svg" width="16" height="16">
         <use href="/src/images/icons.svg#btn-close-icon"></use>
       </svg>
     </button>
-<img class="modal1__image" src="./images/popup-bouquet-mobile.jpg"
-      srcset="./images/popup-bouquet-mobile@2x.jpg 272w",
-      srcset="./images/popup-bouquet-tablet.jpg 588w",
-      srcset="./images/popup-bouquet-tablet@2x.jpg 588w",
-      srcset="./images/popup-bouquet-desktop.jpg 860w",
-      srcset="./images/popup-bouquet-desktop@2x.jpg 860w",
-      alt="flowers" class="newsletter__img"
-    />
-    <div class="right-side">
-    <div class="textarea">
-      <p class="modal__header">Follow to our newsletter</p>
-      <p class="modal__description">
-        Be the first to get exclusive offers and the latest news on our product directly in your
-        box.
-      </p>
-      </div>
 
-      <form class="modal-form">
-        <label for="email" class="modal__form-label">Email</label>
-          <div class="input__wrapper">
-          <input
-            type="email"
-            class="modal-form__input"
-            name="email"
-            id="email"
-            placeholder="tanya.hill@example.com"
+    <div class="modal__layout">
+      <img 
+      class="modal__image" 
+      src="./images/popup-bouquet-mobile.jpg"
+      srcset="
+            ./images/popup-bouquet-mobile@2x.jpg 272w,
+            ./images/popup-bouquet-tablet.jpg 588w,
+            ./images/popup-bouquet-tablet@2x.jpg 588w,
+            ./images/popup-bouquet-desktop.jpg 860w,
+            ./images/popup-bouquet-desktop@2x.jpg 860w
+            "
+            alt="flowers"
           />
-        </div>
-        </label>
 
-        <button type="submit" class="modal-form__submit" data-modal-subscribe-close>Subscribe</button>
-      </form>
+      <div class="modal__textarea">
+        <p class="modal__header">Follow to our newsletter</p>
+        <p class="modal__description">
+          Be the first to get exclusive offers and the latest news on our product directly in your
+          box.
+        </p>
+        
+        <div class="modal__wrapper">
+          <form class="modal__form">
+            <label for="email" class="modal__form-label">Email</label>
+              <input
+                type="email"
+                class="modal__form-input"
+                name="email"
+                id="email"
+                placeholder="tanya.hill@example.com"
+              />
+            </label>
+            <button type="submit" class="modal__form-submit" data-modal-subscribe-close>Subscribe</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>
