@@ -219,6 +219,7 @@
       margin: 0 auto;
       margin-top: 28px;
       margin-bottom: 28px;
+      font-family: 'Montserrat';
 
       transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -255,10 +256,10 @@
  
 
   .right-side{
+    flex-direction: column;
+    display: flex;
     @include desktop{
       background: #fff;
-      flex-direction: column;
-      display: flex;
       min-width: 430px;
       min-height: 528px;
       padding: 111px 40px 32px 40px;
