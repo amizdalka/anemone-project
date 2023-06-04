@@ -3,13 +3,14 @@
   min-height: 60px;
   padding-top: 16px;
   background-color: #ffffff;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
+  display: inline-block;
 
   @include tablet {
-    padding-top: 24px;
+    // padding-top: 24px;
   }
 
   @include desktop {
@@ -20,8 +21,15 @@
     position: relative;
     // width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+
+    @include tablet {
+      align-items: center;
+      max-width: 768px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
 
   &__hamburger {
@@ -41,7 +49,7 @@
   }
 
   &__logo--svg {
-    fill: #0e0e0e;
+    stroke: #0e0e0e;
     background-color: transparent;
     border: none;
     width: 54px;
@@ -103,6 +111,7 @@
     margin-right: 15px;
     border: none;
     background-color: transparent;
+    padding: 6px 0 0;
 
     @include tablet {
       margin-left: unset;
@@ -112,6 +121,16 @@
     @include desktop {
       margin-left: unset;
     }
+  }
+
+  &__tel--svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  &__tel--icon {
+    width: 25px;
+    height: 25px;
   }
 }
 .menu-container.is-open {
