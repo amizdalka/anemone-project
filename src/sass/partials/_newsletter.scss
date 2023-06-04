@@ -119,9 +119,10 @@
 
     @include tablet {
       @include font(500, 16px, 1.25);
-
-
-    }
+          }
+          @include desktop{
+            @include font(500, 18, 1.25);
+          }
   }
 }
 
@@ -246,9 +247,7 @@
       line-height: 1.2;
       color: #5C5C5C;
       @include tablet{
-        font-size:14px;
-        line-height: 1.2;
-        
+        font-size:14px;      
       }
 
   }
@@ -257,7 +256,11 @@
 
   .right-side{
     @include desktop{
-      display: flex;
+      background: #fff;
       flex-direction: column;
+      display: flex;
+      min-width: 430px;
+      min-height: 528px;
+      padding: 111px 40px 32px 40px;
     }
   }
