@@ -7,16 +7,27 @@
 .modal1{
     display: flex;
     flex-direction: column;
+    @include tablet{
+      width: 588px;
+    }
+    @include desktop{
+      width: 860px;
+      flex-direction: row;
+      position: absolute;
+    }
 }
 
 .modal1__image{
-    width: 100%;
+    width:100%;
     object-fit: cover;
     height: auto;
     display: block;
     margin:0 auto;
     padding: 0;
+    @include desktop{
+      height: 100%;
     }
+  }
 
 .backdrop {
   pointer-events: auto;
@@ -49,24 +60,22 @@
 }
 
 
-.modal1{
+.modal,.modal1{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #ffffff;
-  padding: 28px 16px;
   width: 272px;
 
   @include tablet {
-    padding: 48px 32px;
-    width: 480px;
+    width: 588px;
 
   }
 
   &__close {
-    background-color: $secondaryFontColor;
+    background-color:transparent;
     position: absolute;
     top: 16px;
     right: 16px;
@@ -99,23 +108,14 @@
 
 
 
-  &__header {
-    @include font(600, 20px, 1.2);
-    color: #000000;
-    text-align:center;
-    margin-bottom: 14px;
-    padding-top: 18px;
 
-    @include tablet {
-      @include font(600, 32px, 1.21);
-      margin-bottom: 24px;
-    }
-  }
 
 
   &__description {
     @include font(500, 12px, 1.25);
     color: $formFontColor;
+    padding-bottom: 18px;
+    text-align: center;
 
     @include tablet {
       @include font(500, 16px, 1.25);
@@ -125,11 +125,29 @@
   }
 }
 
+.modal__header {
+  @include font(600, 20px, 1.2);
+  color: #000000;
+  text-align:center;
+  margin-bottom: 14px;
+  padding-top: 18px;
+
+  @include tablet {
+    @include font(600, 32px, 1.21);
+    margin-bottom: 24px;
+  }
+}
+
   .modal-form {
+    margin: auto;
+    max-width:85%;
+
     &__name {
       @include font(500, 10px, 1.2);
       margin-bottom: 8px;
       margin-top: 18px;
+      padding-left: 18px;
+      padding-right: 36px;
 
       @include desktop {
         @include font(500, 14px, 1.2);
@@ -139,11 +157,9 @@
 
     &__input {
       @include font(500, 12px, 1.25);
-      width: 100%;
-    
+      width: 236px;    
       display: block;
-      margin-bottom: 14px;
-      padding: 10px 0 10px 12px;
+      margin-top: 8px;
     
 
       outline: none;
@@ -154,6 +170,7 @@
         margin-bottom: 24px;
         padding: 16px 0 16px 16px;
         font-size: 14px;
+        width: 336px; 
 
       }
 
@@ -189,7 +206,7 @@
       @include font(600, 14px, 1.2);
       position: relative;
       display: block;
-      min-width: 240px;
+      min-width: 236px;
       min-height: 37px;
       margin-bottom: 28px;
       background-color: $btnColor;
@@ -200,6 +217,7 @@
       align-items: center;
       margin: 0 auto;
       margin-top: 28px;
+      margin-bottom: 28px;
 
       transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -213,11 +231,33 @@
       }
 
       @include tablet {
-        width: 416px;
+        width: 336px;
         height: 50px;
 
         font-size: 18px;
       }
     }
 
+  }
+
+  .modal__form-label{
+    font-weight: 500;
+      font-size: 10px;
+      line-height: 1.2;
+      color: #5C5C5C;
+      @include tablet{
+        font-size:14px;
+        line-height: 1.2;
+        
+      }
+
+  }
+
+ 
+
+  .right-side{
+    @include desktop{
+      display: flex;
+      flex-direction: column;
+    }
   }
