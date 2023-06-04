@@ -7,9 +7,14 @@
         <use href="/src/images/icons.svg#btn-close-icon"></use>
       </svg>
     </button>
-    <picture class="modal1__image"
-      ><img src="/src/images/popup-bouquet-mobile.jpg" alt="flowers" class="newsletter__img"
-    /></picture>
+<img class="modal1__image" src="./images/popup-bouquet-mobile.jpg"
+      srcset="./images/popup-bouquet-mobile@2x.jpg 272w",
+      srcset="./images/popup-bouquet-tablet.jpg 588w",
+      srcset="./images/popup-bouquet-tablet@2x.jpg 588w",
+      srcset="./images/popup-bouquet-desktop.jpg 860w",
+      srcset="./images/popup-bouquet-desktop@2x.jpg 860w",
+      alt="flowers" class="newsletter__img"
+    />
     <div class="textarea">
       <p class="modal__header">Follow to our newsletter</p>
       <p class="modal__description">
@@ -18,8 +23,8 @@
       </p>
 
       <form class="modal-form">
-        <label class="modal-form__label" for="mail">
-          <p class="modal-form__name">Email</p>
+        <label for="user-email" class="modal__form-label">Email</label>
+          <div class="input__wrapper">
           <input
             type="email"
             class="modal-form__input"
@@ -27,6 +32,7 @@
             id="mail"
             placeholder="tanya.hill@example.com"
           />
+        </div>
         </label>
 
         <button type="submit" class="modal-form__submit" data-modal-subscribe-close>Send</button>
