@@ -26,7 +26,11 @@
 
     @include tablet {
       align-items: center;
-      max-width: 768px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    @include desktop {
+      align-items: center;
       padding-left: 24px;
       padding-right: 24px;
     }
@@ -103,6 +107,12 @@
     font-size: 20px;
     line-height: 1.2;
     color: #000000;
+
+    transition: all 0.5s ease;
+  }
+
+  &__nav--list-item:is(:hover, focus) {
+    color: #e86f54;
   }
 
   &__tel--btn {
@@ -126,6 +136,12 @@
   &__tel--svg {
     width: 25px;
     height: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  &__tel--svg:is(:hover, focus) {
+    fill: #e86f54;
   }
 
   &__tel--icon {

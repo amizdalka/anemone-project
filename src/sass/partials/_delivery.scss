@@ -61,25 +61,28 @@
     border: 1px solid #000;
     border-radius: 50%;
 
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
 
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: normal;
 
     @include tablet {
-      width: 64px;
-      height: 64px;
+      min-width: 64px;
+      min-height: 64px;
 
       font-size: 26px;
       line-height: 1.23;
+      letter-spacing: normal;
     }
     @include desktop {
-      width: 64px;
-      height: 64px;
+      min-width: 64px;
+      min-height: 64px;
 
       font-size: 26px;
       line-height: 1.23;
+      letter-spacing: normal;
     }
   }
 
@@ -88,6 +91,8 @@
     min-height: 135px;
     height: auto;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
   }
 }
