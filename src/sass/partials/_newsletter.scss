@@ -16,6 +16,7 @@
     }
 
 .backdrop {
+  pointer-events: auto;
   position: fixed;
   left: 0;
   top: 0;
@@ -45,7 +46,7 @@
 }
 
 
-.modal.modal1{
+.modal, .modal1{
   position: absolute;
   top: 50%;
   left: 50%;
