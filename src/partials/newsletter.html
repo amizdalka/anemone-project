@@ -44,10 +44,10 @@
     </section> -->
 
 
-    <!-- <button data-modal-open1="" class="blog-btn btn">Subscribe</button> -->
 
 
-    <div data-modal1="" class="subscribe"> 
+
+    <!-- <div data-modal1="" class="subscribe"> 
       <div class="subscribe__wrapper"> 
       <picture> 
       <img src="/src/images/popup-bouquet-mobile.jpg" 
@@ -68,4 +68,36 @@
       <button class="btn subscribe__btn">Subscribe</button> 
       </div> 
       </div> 
-      </div>
+      </div> -->
+
+    <button data-modal-open1="" class="x">Subscribe</button>
+
+      <div class="backdrop">
+    <div class="modal1" data-modal1>
+      <button type="button" class="modal__close" data-modal-close>
+        <svg class="modal__svg" width="16" height="16">
+          <use href="/src/images/icons.svg#btn-close-icon"></use>
+        </svg>
+      </button>
+
+      <p class="modal__header">Follow to our newsletter</p>
+      <p class="modal__description">
+        Be the first to get exclusive offers and the latest news on our product directly in your box.
+      </p>
+
+  <form class="modal-form">
+        <label class="modal-form__label" for="mail">
+        <p class="modal-form__name">Email</p>
+          <input
+            type="email"
+            class="modal-form__input"
+            name="email"
+            id="mail"
+            placeholder="tanya.hill@example.com"
+          >
+        </label>
+
+        <button type="submit" class="modal-form__submit">Send</button>
+      </form>
+    </div>
+  </div>
