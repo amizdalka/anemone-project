@@ -1,89 +1,90 @@
 
-  .modal__submit-button {
-      @include font(600, 14px, 1.2);
-      position: relative;
-      display: block;
-      width: 240px;
-      height: 37px;
-      margin-bottom: 0;
-      background: #e86f54;
-      border-radius: 8px;
-      color: #ffffff;
-      cursor: pointer;
-      border: none;
-      align-items: center;
-      margin: 0 auto;
-      font-family: 'Montserrat';
+//   .modal__submit-button {
+//       @include font(600, 14px, 1.2);
+//       position: relative;
+//       display: block;
+//       width: 240px;
+//       height: 37px;
+//       margin-bottom: 0;
+//       background: #e86f54;
+//       border-radius: 8px;
+//       color: #ffffff;
+//       cursor: pointer;
+//       border: none;
+//       align-items: center;
+//       margin: 0 auto;
+//       font-family: 'Montserrat';
       
 
-      transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//       transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      &:is(:hover, :focus) {
-        background-color: #c26651;
-      }
+//       &:is(:hover, :focus) {
+//         background-color: #c26651;
+//       }
 
-      @include tablet {
-        width: 416px;
-        height: 50px;
-      }
-    }
+//       @include tablet {
+//         width: 416px;
+//         height: 50px;
+//       }
+//     }
 
-    .modal__close{
-        position:absolute;
-        top:8px;
-        right:8px;
-        background-color: #FFFFFF;
-        border:none;
-        cursor:pointer;
-        color: #212121;
-        font-size: 22px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        align-items: center;
+//     .modal__close{
+//         position:absolute;
+//         top:8px;
+//         right:8px;
+//         background-color: #FFFFFF;
+//         border:none;
+//         cursor:pointer;
+//         color: #212121;
+//         font-size: 22px;
+//         text-align: center;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         display: flex;
+//         align-items: center;
       
-      }
+//       }
             
-            .icon-close-svg{
-             width:11px;
-             height: 11px;
-            } 
+//             .icon-close-svg{
+//              width:11px;
+//              height: 11px;
+//             } 
   
-.modal__btn-close{
-    border:none;
-}
+// .modal__btn-close{
+//     border:none;
+// }
 
-.modal__img{
-    width: 100%;
-    height: auto;
-    display: block;
-    }
+// .modal__img{
+//     width: 100%;
+//     height: auto;
+//     display: block;
+//     }
 
 
-.modal__input{
-    border:1px solid #D7D7D7;
-    border-radius: 4px;
-    cursor: auto;
-    display: flex;
-    align-content: center;
-}
+// .modal__input{
+//     border:1px solid #D7D7D7;
+//     border-radius: 4px;
+//     cursor: auto;
+//     display: flex;
+//     align-content: center;
+// }
 
-.modal.newsletter{
-  padding: 0;
-  object-fit: contain;
+// .modal.newsletter{
+//   padding: 0;
+//   object-fit: contain;
 
-}
-.side__part{
-  padding: 18px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+// }
+// .side__part{
+//   padding: 18px;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+// }
 
-.modal__form{
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
+// .modal__form{
+//   display: flex;
+//   flex-direction: column;
+//   gap: 18px;
+// }
+
