@@ -2,47 +2,46 @@
 
 <!--MODAL CONTACT-US FORMULAR (Placed under the </footer>)-->
 
-
-  <div class="backdrop is-hidden" data-modal-contact>
-    <div class="modal">
-      <button type="button" class="modal__close" data-modal-contact-close>
-        <svg class="modal__svg" width="16" height="16">
-          <use href="/src/images/icons.svg#btn-close-icon"></use>
-        </svg>
-      </button>
+<div class="backdrop is-hidden" data-modal-contact>
+  <div class="modal">
+    <button type="button" class="modal__close" data-modal-contact-close>
+      <svg class="modal__svg" width="16" height="16">
+        <use href="/src/images/icons.svg#btn-close-icon"></use>
+      </svg>
+    </button>
+    <form class="modal-form">
       <h1 class="modal__header">Contact us</h1>
       <p class="modal__description">
         If you have any additional questions or you want to clarify something before you make an
         order please fill in your contact details. We will call you back.
       </p>
 
-  <form class="modal-form">
-        <label class="modal-form__label" for="name">
-        <p class="modal-form__name">Name</p>
-          <input required
-            type="text"
-            class="modal-form__input"
-            name="name"
-            id="name"
-            placeholder="Kristin Watson"
-          >
-        </label>
+      <div class="modal-form__container">
+        <label class="modal-form__label" for="name">Name</label>
+        <input
+          required
+          type="text"
+          class="modal-form__input"
+          name="name"
+          id="name"
+          placeholder="Kristin Watson"
+        />
+      </div>
 
-        <label class="modal-form__label" for="mail">
-        <p class="modal-form__name">Email</p>
-          <input
-            type="email"
-            class="modal-form__input"
-            name="email"
-            id="mail"
-            placeholder="tanya.hill@example.com"
-          >
-        </label>
+      <div class="modal-form__container">
+        <label class="modal-form__label" for="mail">Email</label>
+        <input
+          type="email"
+          class="modal-form__input"
+          name="email"
+          id="mail"
+          placeholder="tanya.hill@example.com"
+        />
+      </div>
 
-        <button type="submit" class="modal-form__submit">Send</button>
-      </form>
-    </div>
+      <button type="submit" class="modal-form__submit">Send</button>
+    </form>
   </div>
-
+</div>
 
 <!--MODAL CONTACT-US FORMULAR -->
