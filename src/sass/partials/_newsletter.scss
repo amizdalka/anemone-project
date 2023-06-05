@@ -76,7 +76,8 @@ height: auto;
 display: block;
 @include desktop{
   width: 428px;
-  height: 528px;
+  height: 100%;
+  object-fit: contain;
 
 }
 }
@@ -134,15 +135,16 @@ padding: 18px 16px 28px;
       width: 100%;
       outline: none;
       border: 1px solid #D7D7D7;
+      border-radius: 4px;
       margin-bottom: 24px;
       padding: 16px 0 16px 16px;
       font-size: 14px;
     }
    &__form-input::placeholder {
-      color: #D7D7D7;
+    color: rgba(0, 0, 0, 0.3);
     }
     &__form-input:is(:hover, :focus) {
-      border-color: #111111b2;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
   &__form-submit {
     @include font(600, 14px, 1.2);
