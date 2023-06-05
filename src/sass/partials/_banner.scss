@@ -84,6 +84,32 @@
       width: 166px;
     }
   }
+  &__icon-mobile {
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__icon-tablet {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__icon-desktop {
+    display: none;
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: block;
+    }
+  }
   &__title {
     position: absolute;
     text-align: center;
