@@ -1,7 +1,10 @@
-footer .container {
-  padding: 0;
+footer {
   background-color: $footerBgColor;
   background-size: cover;
+}
+
+footer .container {
+  padding: 0;
 }
 
 .footer {
