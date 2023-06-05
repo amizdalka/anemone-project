@@ -58,18 +58,27 @@
   }
 }
 &__image {
-  max-height: 121px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  @include tablet {
-    max-height: 271px;
-  }
+//   max-height: 121px;
+//   width: 100%;
+//   object-fit: cover;
+//   display: block;
+//   margin: 0 auto;
+//   padding: 0;
+//   @include tablet {
+//     max-height: 271px;
+//   }
+// @include desktop {
+// height:auto;
+// }
+
+max-width: 100%;
+height: auto;
+display: block;
+@include desktop{
+  width: 428px;
+  height: 528px;
+
 }
-@include desktop {
-max-height: 528px;
 }
 &__textarea {
 display: flex;
@@ -166,6 +175,7 @@ padding: 18px 16px 28px;
     }
   }
 }
+
 .modal1__form-input:valid:not(:placeholder-shown) {
 border-color: green;}
 .modal1__form-input:invalid:not(:placeholder-shown) {
