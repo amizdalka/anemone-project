@@ -1,4 +1,5 @@
-footer {
+footer .container {
+  padding: 0;
   background-color: $footerBgColor;
   background-size: cover;
 }
@@ -7,7 +8,6 @@ footer {
   box-sizing: border-box;
   height: 389px;
   row-gap: 32px;
-  column-gap: 32px;
   color: $secondaryFontColor;
   padding: 32px 18px;
   display: flex;
@@ -90,6 +90,7 @@ footer {
 }
 @media (max-width: 767px) {
   .footer {
+    column-gap: calc((100% - 260px));
     &__mail {
       display: flex;
       flex-direction: column;
