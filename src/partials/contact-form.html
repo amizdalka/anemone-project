@@ -17,26 +17,32 @@
       </p>
 
       <div class="modal-form__container">
-        <label class="modal-form__label" for="name">Name</label>
-        <input
-          required
-          type="text"
-          class="modal-form__input"
-          name="name"
-          id="name"
-          placeholder="Kristin Watson"
-        />
-      </div>
+        <div class="modal-form__wrapper">
+          <input
+            type="text"
+            class="modal-form__input"
+            name="name"
+            id="name"
+            placeholder="Kristin Watson"
+            pattern=".+"
+            required
+          />
+          <label class="modal-form__label" for="name">Name</label>
+        </div>
 
-      <div class="modal-form__container">
-        <label class="modal-form__label" for="mail">Email</label>
-        <input
-          type="email"
-          class="modal-form__input"
-          name="email"
-          id="mail"
-          placeholder="tanya.hill@example.com"
-        />
+        <div class="modal-form__wrapper">
+          <input
+            type="email"
+            class="modal-form__input"
+            name="email"
+            id="mail"
+            placeholder="tanya.hill@example.com"
+            pattern=".+"
+            required
+          />
+
+          <label class="modal-form__label" for="mail">Email</label>
+        </div>
       </div>
 
       <button type="submit" class="modal-form__submit">Send</button>

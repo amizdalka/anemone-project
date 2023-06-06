@@ -44,11 +44,20 @@ footer .container {
     color: $btnHoverColor;
   }
 
-  &__container--icons {
+  &__socials {
+    display: flex;
     flex-direction: row;
-    column-gap: 14px;
-    align-items: flex-start;
-    max-height: 28px;
+    gap: 14px;
+
+    @include tablet {
+      gap: 18px;
+      flex-direction: column;
+    }
+
+    @include desktop {
+      gap: 18px;
+      flex-direction: column;
+    }
   }
 
   & ul {
