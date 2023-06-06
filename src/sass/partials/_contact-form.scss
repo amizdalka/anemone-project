@@ -11,13 +11,11 @@
   align-items: center;
 }
 
-
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
 }
-
 
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale (0) rotate(45 deg);
@@ -26,7 +24,6 @@
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-180deg);
 }
-
 
 .modal {
   box-sizing: border-box;
@@ -42,7 +39,6 @@
   @include tablet {
     padding: 48px 32px;
     width: 480px;
-
   }
 
   &__close {
@@ -65,7 +61,6 @@
     }
   }
 
-
   &__svg {
     fill: Solid #000000;
 
@@ -76,8 +71,6 @@
       height: 24px;
     }
   }
-
-
 
   &__header {
     @include font(600, 20px, 1.2);
@@ -91,15 +84,12 @@
     }
   }
 
-
   &__description {
     @include font(500, 12px, 1.25);
     color: $formFontColor;
 
     @include tablet {
       @include font(500, 16px, 1.25);
-
-
     }
   }
 }
@@ -107,31 +97,32 @@
 .modal-form {
   box-sizing: border-box;
 
-
   &__container {
-    box-sizing: border-box;
-    margin: 0 auto;
     position: relative;
-    max-width: 240px;
-
+    margin-top: 18px;
 
     @include tablet {
-      max-width: 416px;
-      margin-top: 32px
+      margin-top: 32px;
     }
   }
+  &__wrapper {
+    position: relative;
+    padding-top: 8px;
 
+    @include tablet {
+      padding-top: 24px;
+    }
+  }
 
   &__input {
     @include font(500, 12px, 1.25);
     width: 100%;
     box-sizing: border-box;
-    margin-top: 8px;;
+    margin-top: 8px;
 
     display: block;
     margin-bottom: 14px;
     padding: 10px 0 10px 12px;
-
 
     outline: none;
     border: 1px solid #d7d7d7;
@@ -141,7 +132,6 @@
       margin-bottom: 24px;
       padding: 16px 0 16px 16px;
       font-size: 14px;
-
     }
 
     &::placeholder {
@@ -151,18 +141,26 @@
     &:is(:hover, :focus) {
       border-color: #111111b2;
     }
-  }
 
+    &:valid:not(:placeholder-shown) ~ label {
+      color: green;
+    }
+    &:valid:not(:placeholder-shown) {
+      border-color: green;
+    }
 
-  .modal-form__input:valid:not(:placeholder-shown) {
-    border-color: green;
-  }
-
-  .modal-form__input:invalid:not(:placeholder-shown) {
-    border-color: red;
+    &:invalid:not(:placeholder-shown) ~ label {
+      color: red;
+    }
+    &:invalid:not(:placeholder-shown) {
+      border-color: red;
+    }
   }
 
   &__label {
+    position: absolute;
+    top: 0;
+
     @include font(500, 10px, 1.2);
     color: $formFontColor;
 
@@ -170,7 +168,6 @@
       @include font(500, 14px, 1.2);
     }
   }
-
 
   &__submit {
     @include font(600, 14px, 1.2);
@@ -186,10 +183,7 @@
     align-items: center;
     margin-top: 28px;
 
-  
-
     transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 
     &:hover {
       background-color: $btnHoverColor;
@@ -202,11 +196,9 @@
     @include tablet {
       width: 416px;
       height: 50px;
-      margin-top:48;
-      
+      margin-top: 48;
 
       font-size: 18px;
     }
   }
-
 }
