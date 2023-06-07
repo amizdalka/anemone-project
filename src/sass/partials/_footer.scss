@@ -119,6 +119,10 @@ footer .container {
     justify-content: space-between;
     flex-wrap: nowrap;
 
+    &__socials {
+      align-items: flex-end;
+    }
+
     & h3 {
       line-height: 24.2px;
       font-size: 20px;
@@ -136,8 +140,8 @@ footer .container {
       max-height: 74px;
     }
 
-    &__icon:not(:last-child) {
-      margin: 0;
+    ul.footer__socials li:not(:last-child) {
+      margin: 0px;
     }
   }
 }
