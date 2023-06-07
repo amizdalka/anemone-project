@@ -1,5 +1,4 @@
 .store {
-
   &__list {
     display: flex;
     justify-content: center;
@@ -22,13 +21,12 @@
   }
 
   &__item {
-    
     &-title {
       font-family: 'Montserrat';
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
-      display: inline-flex;
+      display: flex;
       align-items: center;
       white-space: nowrap;
       gap: 8px;
